@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-19T11:34:14.004801+00:00",
+ "updated": "2026-08-19T11:58:05.801116+00:00",
  "window_days": 7,
  "note": "Counts are derived from 30-minute polling, not from a play-count API. Tracks played between polls are not observed, so these undercount actual plays.",
  "observations": [
