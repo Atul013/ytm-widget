@@ -1,17 +1,18 @@
-"""Rolling observation log for weekly play counts.
+"""Rolling play log for weekly counts.
 
 There is no play-count API in YouTube Music. `get_history()` returns a flat
-recency list with no counts and no timestamps, so counts have to be built from
-our own repeated observations.
+recency list, newest first, with no counts and no timestamps - but it returns
+around 200 entries, not just the current track. That full list is what makes
+real counts possible.
 
-The workflow polls every 30 minutes and records the tracks it sees. A track is
-counted once per *observation session* - if it is still the top entry on the
-next poll, that is the same play, not a new one. Because polling is coarser
-than listening, this undercounts: several tracks played inside one interval
-collapse into whichever was most recent at poll time. Short tracks are missed
-more often than long ones.
+Each run diffs the returned list against what we have already recorded and
+appends everything that is new. Because the list reaches far further back than
+one polling interval, tracks played *between* polls are still captured. Polling
+only has to be frequent enough that fewer than ~200 tracks pass between runs.
 
-The numbers are therefore directionally right, not exact, and the card says so.
+What this still cannot see: the API returns each track once per appearance in
+the history feed, so a song played three times in a row may appear once. Counts
+are therefore a floor, not an exact tally.
 """
 
 from __future__ import annotations
@@ -22,7 +23,7 @@ from pathlib import Path
 from typing import Any
 
 WINDOW_DAYS = 7
-# Cap retained observations so the file cannot grow without bound.
+# Cap retained plays so the file cannot grow without bound.
 MAX_ENTRIES = 4000
 
 
@@ -41,51 +42,81 @@ def load(path: Path) -> list[dict[str, Any]]:
         data = json.loads(path.read_text(encoding="utf-8"))
     except (json.JSONDecodeError, OSError):
         return []
-    return data.get("observations", []) if isinstance(data, dict) else []
+    if not isinstance(data, dict):
+        return []
+    # "observations" is the pre-1.1 key; read it so existing logs survive.
+    return data.get("plays", data.get("observations", []))
 
 
-def prune(observations: list[dict[str, Any]], now: datetime) -> list[dict[str, Any]]:
-    """Drop observations outside the window, and cap total size."""
+def prune(plays: list[dict[str, Any]], now: datetime) -> list[dict[str, Any]]:
     cutoff = now - timedelta(days=WINDOW_DAYS)
     kept = [
-        o for o in observations
-        if (seen := _parse(o.get("seen", ""))) is not None and seen >= cutoff
+        p for p in plays
+        if (seen := _parse(p.get("seen", ""))) is not None and seen >= cutoff
     ]
     return kept[-MAX_ENTRIES:]
 
 
-def record(
-    observations: list[dict[str, Any]],
-    track: dict[str, Any],
+def _signature(track: dict[str, Any]) -> str:
+    """Identify a history entry. videoId alone is not enough - the same song
+    appears repeatedly across the feed, and we need to tell a genuinely new
+    appearance from one we have already recorded."""
+    return str(track.get("videoId") or track.get("title", ""))
+
+
+def record_history(
+    plays: list[dict[str, Any]],
+    history: list[dict[str, Any]],
     now: datetime,
-) -> tuple[list[dict[str, Any]], bool]:
-    """Append a track observation unless it repeats the most recent one.
+) -> tuple[list[dict[str, Any]], int]:
+    """Append every history entry newer than the last one we recorded.
 
-    Returns (observations, was_new). A track still sitting at the top of history
-    on the next poll is the same play we already counted.
+    `history` is newest-first. We walk it until we hit the most recent entry we
+    already know about, then record everything above that point - those are the
+    tracks played since the previous run.
+
+    On the very first run there is no anchor, so the whole returned list is
+    recorded. That backfills genuine listening history rather than starting
+    empty, at the cost of not knowing exactly when those plays happened.
     """
-    video_id = track.get("videoId")
-    if not video_id:
-        return observations, False
+    if not history:
+        return plays, 0
 
-    if observations and observations[-1].get("videoId") == video_id:
-        return observations, False
+    known = {p.get("videoId") for p in plays}
+    anchor = plays[-1].get("videoId") if plays else None
 
-    artists = track.get("artists") or []
-    album = track.get("album")
-    observations.append(
-        {
-            "videoId": video_id,
-            "title": track.get("title", "Unknown"),
-            "artist": ", ".join(
-                a.get("name", "") for a in artists if isinstance(a, dict) and a.get("name")
-            ) or "Unknown artist",
-            "album": album.get("name") if isinstance(album, dict) else None,
-            "thumbnail": _best_thumb(track.get("thumbnails")),
-            "seen": now.isoformat(),
-        }
-    )
-    return observations, True
+    fresh: list[dict[str, Any]] = []
+    for track in history:
+        sig = _signature(track)
+        if anchor and sig == anchor:
+            break
+        fresh.append(track)
+
+    # No anchor match means the feed moved on further than we can reconcile.
+    # Fall back to recording only entries we have never seen at all.
+    if anchor and len(fresh) == len(history):
+        fresh = [t for t in history if _signature(t) not in known]
+
+    # `history` is newest-first; store oldest-first so the log reads forward
+    # and `plays[-1]` stays the most recent entry.
+    for track in reversed(fresh):
+        artists = track.get("artists") or []
+        album = track.get("album")
+        plays.append(
+            {
+                "videoId": _signature(track),
+                "title": track.get("title", "Unknown"),
+                "artist": ", ".join(
+                    a.get("name", "") for a in artists
+                    if isinstance(a, dict) and a.get("name")
+                ) or "Unknown artist",
+                "album": album.get("name") if isinstance(album, dict) else None,
+                "thumbnail": _best_thumb(track.get("thumbnails")),
+                "seen": now.isoformat(),
+            }
+        )
+
+    return plays, len(fresh)
 
 
 def _best_thumb(thumbnails: list | None) -> str | None:
@@ -101,52 +132,52 @@ def _best_thumb(thumbnails: list | None) -> str | None:
     return usable[-1]["url"]
 
 
-def top_tracks(observations: list[dict[str, Any]], limit: int = 5) -> list[dict[str, Any]]:
-    """Rank tracks by observation count, most played first.
+def top_tracks(plays: list[dict[str, Any]], limit: int = 5) -> list[dict[str, Any]]:
+    """Rank tracks by play count, most played first.
 
-    Ties break by most recent play, so an equal-count track heard today ranks
-    above one last heard six days ago.
+    Ties break by recency, so with equal counts the more recently played track
+    ranks higher. Note that when every count is 1 this degenerates into a
+    recency list - a signal that the log has not accumulated enough to rank.
     """
     tallies: dict[str, dict[str, Any]] = {}
-    for obs in observations:
-        video_id = obs.get("videoId")
+    for play in plays:
+        video_id = play.get("videoId")
         if not video_id:
             continue
         entry = tallies.setdefault(
             video_id,
             {
                 "videoId": video_id,
-                "title": obs.get("title", "Unknown"),
-                "artist": obs.get("artist", "Unknown artist"),
-                "album": obs.get("album"),
-                "thumbnail": obs.get("thumbnail"),
+                "title": play.get("title", "Unknown"),
+                "artist": play.get("artist", "Unknown artist"),
+                "album": play.get("album"),
+                "thumbnail": play.get("thumbnail"),
                 "count": 0,
-                "last_seen": obs.get("seen", ""),
+                "last_seen": play.get("seen", ""),
             },
         )
         entry["count"] += 1
-        if obs.get("seen", "") > entry["last_seen"]:
-            entry["last_seen"] = obs["seen"]
-            # Prefer the most recent metadata; art URLs expire.
-            if obs.get("thumbnail"):
-                entry["thumbnail"] = obs["thumbnail"]
+        if play.get("seen", "") > entry["last_seen"]:
+            entry["last_seen"] = play["seen"]
+            if play.get("thumbnail"):
+                entry["thumbnail"] = play["thumbnail"]
 
     ranked = sorted(tallies.values(), key=lambda e: (e["count"], e["last_seen"]), reverse=True)
     return ranked[:limit]
 
 
-def save(path: Path, observations: list[dict[str, Any]], now: datetime) -> None:
+def save(path: Path, plays: list[dict[str, Any]], now: datetime) -> None:
     path.write_text(
         json.dumps(
             {
                 "updated": now.isoformat(),
                 "window_days": WINDOW_DAYS,
                 "note": (
-                    "Counts are derived from 30-minute polling, not from a play-count "
-                    "API. Tracks played between polls are not observed, so these "
-                    "undercount actual plays."
+                    "Counts are built by diffing the full get_history() feed on "
+                    "each run, so tracks played between polls are captured. The "
+                    "feed lists each appearance once, so counts are a floor."
                 ),
-                "observations": observations,
+                "plays": plays,
             },
             indent=1,
         )
