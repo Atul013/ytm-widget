@@ -3,9 +3,7 @@
 An SVG card showing the most recent track played on my YouTube Music account,
 refreshed every 30 minutes by a GitHub Action. No server, no hosting.
 
-![Last played](https://raw.githubusercontent.com/USER/REPO/main/music.svg)
-
-> Replace `USER/REPO` above with your GitHub username and repository name.
+![Last played](https://raw.githubusercontent.com/Atul013/ytm-widget/main/music.svg)
 
 ## How it works
 
