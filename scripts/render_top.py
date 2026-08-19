@@ -1,4 +1,9 @@
-"""SVG renderer for the weekly top-tracks card."""
+"""SVG renderer for the most-played card.
+
+Counts come from our own polling, not from the API, so a track shows "2 plays"
+only once we have observed it in the feed on two separate runs. Until a song is
+actually replayed everything sits at one play and the ordering is recency.
+"""
 
 from __future__ import annotations
 
@@ -23,13 +28,12 @@ def _truncate(text: str, limit: int) -> str:
     return text if len(text) <= limit else text[: max(0, limit - 1)].rstrip() + "…"
 
 
-def _row(index: int, entry: dict[str, Any], art_b64: bytes | None, y: int, max_count: int) -> str:
+def _row(index: int, entry: dict[str, Any], art_b64: bytes | None, y: int) -> str:
     rank = index + 1
     title = _esc(_truncate(entry.get("title", "Unknown"), 26))
     artist = _esc(_truncate(entry.get("artist", "Unknown artist"), 30))
-    count = int(entry.get("count", 0))
+    count = int(entry.get("count", 1))
     plays = "1 play" if count == 1 else f"{count} plays"
-
     art_x = PAD + 22
     text_x = art_x + ART + 12
 
@@ -45,19 +49,12 @@ def _row(index: int, entry: dict[str, Any], art_b64: bytes | None, y: int, max_c
             f'fill="var(--muted-bg)"/>'
         )
 
-    # Relative bar showing this track's share of the top spot's count.
-    bar_w = 96
-    fill_w = max(3, int(bar_w * (count / max_count))) if max_count else 3
-    bar_x = CARD_W - PAD - bar_w
-
     return f"""  <clipPath id="r{rank}"><rect x="{art_x}" y="{y + 6}" width="{ART}" height="{ART}" rx="6"/></clipPath>
   <text x="{PAD}" y="{y + 32}" class="rank">{rank}</text>
   {art}
   <text x="{text_x}" y="{y + 24}" class="title">{title}</text>
   <text x="{text_x}" y="{y + 40}" class="artist">{artist}</text>
-  <rect x="{bar_x}" y="{y + 20}" width="{bar_w}" height="5" rx="2.5" fill="var(--muted-bg)"/>
-  <rect x="{bar_x}" y="{y + 20}" width="{fill_w}" height="5" rx="2.5" fill="var(--accent)"/>
-  <text x="{CARD_W - PAD}" y="{y + 40}" class="plays" text-anchor="end">{plays}</text>"""
+  <text x="{CARD_W - PAD}" y="{y + 32}" class="plays" text-anchor="end">{plays}</text>"""
 
 
 def render(entries: list[dict[str, Any]], art: list[bytes | None], days: int = 7) -> str:
@@ -66,10 +63,8 @@ def render(entries: list[dict[str, Any]], art: list[bytes | None], days: int = 7
 
     rows_h = ROW_H * len(entries)
     card_h = HEADER_H + rows_h + FOOTER_H
-    max_count = max(int(e.get("count", 0)) for e in entries) or 1
-
     rows = "\n".join(
-        _row(i, e, art[i] if i < len(art) else None, HEADER_H + i * ROW_H, max_count)
+        _row(i, e, art[i] if i < len(art) else None, HEADER_H + i * ROW_H)
         for i, e in enumerate(entries)
     )
 
@@ -97,14 +92,14 @@ def render(entries: list[dict[str, Any]], art: list[bytes | None], days: int = 7
   <rect class="card" x="0.5" y="0.5" width="{CARD_W - 1}" height="{card_h - 1}" rx="12"/>
   <text x="{PAD}" y="28" class="head">MOST PLAYED · LAST {days} DAYS</text>
 {rows}
-  <text x="{PAD}" y="{card_h - 9}" class="foot">Sampled every 30 min — approximate</text>
+  <text x="{PAD}" y="{card_h - 9}" class="foot">Counted from polling — a floor, not exact</text>
 </svg>
 """
 
 
 def _empty_card() -> str:
     h = HEADER_H + 54
-    return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{CARD_W}" height="{h}" viewBox="0 0 {CARD_W} {h}" role="img" aria-label="Not enough listening data yet">
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{CARD_W}" height="{h}" viewBox="0 0 {CARD_W} {h}" role="img" aria-label="No listening data yet">
   <style>
     :root {{ --bg:#ffffff; --border:#d0d7de; --sub:#59636e; --accent:#cc0000; }}
     @media (prefers-color-scheme: dark) {{
@@ -115,7 +110,7 @@ def _empty_card() -> str:
     .msg {{ font-size: 12px; fill: var(--sub); }}
   </style>
   <rect fill="var(--bg)" stroke="var(--border)" x="0.5" y="0.5" width="{CARD_W - 1}" height="{h - 1}" rx="12"/>
-  <text x="{PAD}" y="28" class="head">MOST PLAYED · LAST 7 DAYS</text>
-  <text x="{PAD}" y="{HEADER_H + 22}" class="msg">Collecting data… check back in a few days.</text>
+  <text x="{PAD}" y="28" class="head">RECENTLY PLAYED</text>
+  <text x="{PAD}" y="{HEADER_H + 22}" class="msg">No tracks recorded yet.</text>
 </svg>
 """

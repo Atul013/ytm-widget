@@ -10,9 +10,13 @@ appends everything that is new. Because the list reaches far further back than
 one polling interval, tracks played *between* polls are still captured. Polling
 only has to be frequent enough that fewer than ~200 tracks pass between runs.
 
-What this still cannot see: the API returns each track once per appearance in
-the history feed, so a song played three times in a row may appear once. Counts
-are therefore a floor, not an exact tally.
+Counting relies on this diffing rather than on the API: a track that appears
+in the feed again on a later run is a replay we genuinely observed. Because
+videoIds are unique per appearance, counts are keyed on title + artist.
+
+Counts are a floor, not an exact tally - replays inside one polling window
+collapse into a single entry, and plays from before logging began carry no
+timestamp to attribute them to.
 """
 
 from __future__ import annotations
@@ -82,19 +86,23 @@ def record_history(
     if not history:
         return plays, 0
 
+    # videoIds are unique per appearance, so an id we have already stored marks
+    # exactly where the previous run stopped. Walk the newest-first feed and
+    # take everything above the first already-known id.
     known = {p.get("videoId") for p in plays}
-    anchor = plays[-1].get("videoId") if plays else None
 
     fresh: list[dict[str, Any]] = []
     for track in history:
-        sig = _signature(track)
-        if anchor and sig == anchor:
+        if _signature(track) in known:
             break
         fresh.append(track)
 
-    # No anchor match means the feed moved on further than we can reconcile.
-    # Fall back to recording only entries we have never seen at all.
-    if anchor and len(fresh) == len(history):
+    # Every id unseen means the feed moved further than we can reconcile (more
+    # than ~200 tracks since the last run, or a reset log). Taking the whole
+    # feed would be right on a genuine first run and wrong after a gap; the
+    # empty-log case is already the whole feed, so treat the rest as a gap and
+    # record only what is genuinely new.
+    if known and len(fresh) == len(history):
         fresh = [t for t in history if _signature(t) not in known]
 
     # `history` is newest-first; store oldest-first so the log reads forward
@@ -132,22 +140,36 @@ def _best_thumb(thumbnails: list | None) -> str | None:
     return usable[-1]["url"]
 
 
-def top_tracks(plays: list[dict[str, Any]], limit: int = 5) -> list[dict[str, Any]]:
-    """Rank tracks by play count, most played first.
+def _track_key(play: dict[str, Any]) -> str:
+    """Identity for counting purposes.
 
-    Ties break by recency, so with equal counts the more recently played track
-    ranks higher. Note that when every count is 1 this degenerates into a
-    recency list - a signal that the log has not accumulated enough to rank.
+    videoId cannot be used: get_history() gives every appearance its own id, so
+    replaying a song yields a different id and every count would be 1. Title
+    plus artist is the stable identity across appearances. The tradeoff is that
+    two genuinely different recordings sharing a title and artist merge.
+    """
+    return f"{play.get('title', '')}␟{play.get('artist', '')}".lower()
+
+
+def top_tracks(plays: list[dict[str, Any]], limit: int = 5) -> list[dict[str, Any]]:
+    """Rank tracks by how many separate plays we have witnessed.
+
+    Counts come from our own polling, not the API. A track appearing in the
+    feed again on a later run is a play we genuinely observed. This means
+    counts are a floor: replays inside a single polling window collapse into
+    one, and plays from before logging began are not attributed.
+
+    Ties break by recency, so equally-played tracks show most recent first.
     """
     tallies: dict[str, dict[str, Any]] = {}
     for play in plays:
-        video_id = play.get("videoId")
-        if not video_id:
+        key = _track_key(play)
+        if not key.strip("␟"):
             continue
         entry = tallies.setdefault(
-            video_id,
+            key,
             {
-                "videoId": video_id,
+                "videoId": play.get("videoId"),
                 "title": play.get("title", "Unknown"),
                 "artist": play.get("artist", "Unknown artist"),
                 "album": play.get("album"),
@@ -157,12 +179,13 @@ def top_tracks(plays: list[dict[str, Any]], limit: int = 5) -> list[dict[str, An
             },
         )
         entry["count"] += 1
-        if play.get("seen", "") > entry["last_seen"]:
-            entry["last_seen"] = play["seen"]
+        if play.get("seen", "") >= entry["last_seen"]:
+            entry["last_seen"] = play.get("seen", "")
             if play.get("thumbnail"):
                 entry["thumbnail"] = play["thumbnail"]
 
-    ranked = sorted(tallies.values(), key=lambda e: (e["count"], e["last_seen"]), reverse=True)
+    ranked = sorted(tallies.values(), key=lambda e: e["last_seen"], reverse=True)
+    ranked.sort(key=lambda e: -e["count"])
     return ranked[:limit]
 
 
