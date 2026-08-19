@@ -1,0 +1,92 @@
+name: Update YT Music widget
+
+on:
+  schedule:
+    # Every 30 minutes. GitHub's scheduled runners slip under load,
+    # so treat this as a target rather than a guarantee.
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/**"
+      - ".github/workflows/widget.yml"
+
+concurrency:
+  group: ytm-widget
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Update widget
+        id: update
+        env:
+          YTM_HEADERS: ${{ secrets.YTM_HEADERS }}
+        run: python scripts/update_widget.py
+
+      - name: Commit if changed
+        if: steps.update.outputs.changed == 'true'
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add music.svg state.json
+          if git diff --staged --quiet; then
+            echo "Nothing staged; skipping commit."
+          else
+            git commit -m "chore: update now playing card"
+            git push
+          fi
+
+      # Auth failures are the only case that alerts. Transient errors exit 0
+      # inside the script and simply retry on the next run.
+      - name: Open re-auth issue
+        if: failure() && steps.update.outputs.auth_failed == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const title = "YTM widget: re-auth needed";
+            const { data: found } = await github.rest.search.issuesAndPullRequests({
+              q: `repo:${context.repo.owner}/${context.repo.repo} is:issue is:open in:title "${title}"`,
+            });
+            const runUrl = `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
+            if (found.total_count > 0) {
+              core.info(`Issue #${found.items[0].number} already open; not filing a duplicate.`);
+              return;
+            }
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title,
+              body: [
+                "The widget could not authenticate with YouTube Music.",
+                "",
+                "The card has been left untouched and still shows the last known track.",
+                "",
+                "**To fix:**",
+                "1. Open <https://music.youtube.com> while logged in",
+                "2. DevTools -> Network -> click any POST request to `music.youtube.com`",
+                "3. Copy the full request headers",
+                "4. Paste them into the `YTM_HEADERS` repository secret",
+                "5. Re-run the workflow from the Actions tab",
+                "",
+                "Most common cause: you logged out of YouTube Music in the browser the headers came from.",
+                "",
+                `[Failed run](${runUrl})`,
+              ].join("\n"),
+            });

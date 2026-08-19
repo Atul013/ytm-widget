@@ -1,0 +1,15 @@
+# Credentials - NEVER commit these
+browser.json
+headers_auth.json
+oauth.json
+.env
+*.secret
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Local test output
+music.local.svg

@@ -1,0 +1,3 @@
+# Runners are Linux; keep committed files LF regardless of local checkout.
+* text=auto eol=lf
+*.svg text eol=lf
