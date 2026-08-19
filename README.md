@@ -229,6 +229,11 @@ Note that a public repository also makes `state.json` and the commit history
 public, which together are an ongoing log of what you listen to. That is inherent
 to how the widget works, but it is worth deciding on deliberately.
 
+## Acknowledgements
+
+Built on [ytmusicapi](https://github.com/sigma67/ytmusicapi), which does the
+hard part of talking to an API that was never meant to be talked to.
+
 ## License
 
 [MIT](LICENSE)
