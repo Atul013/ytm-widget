@@ -15,11 +15,15 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+import history_log  # noqa: E402
 import render  # noqa: E402
+import render_top  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 STATE_PATH = ROOT / "state.json"
 SVG_PATH = ROOT / "music.svg"
+LOG_PATH = ROOT / "history.json"
+TOP_SVG_PATH = ROOT / "top.svg"
 
 EXIT_OK = 0
 EXIT_AUTH = 2
@@ -151,8 +155,24 @@ def main() -> int:
     state = load_state()
     now = datetime.now(timezone.utc)
 
+    observations = history_log.prune(history_log.load(LOG_PATH), now)
+    observations, logged_new = history_log.record(observations, track, now)
+    history_log.save(LOG_PATH, observations, now)
+
+    top = history_log.top_tracks(observations, limit=5)
+    top_art = [fetch_thumbnail(e.get("thumbnail")) for e in top]
+    TOP_SVG_PATH.write_text(
+        render_top.render(top, top_art, days=history_log.WINDOW_DAYS),
+        encoding="utf-8",
+    )
+    if logged_new:
+        log(f"Logged observation ({len(observations)} in window)")
+
     if state.get("videoId") == video_id and SVG_PATH.exists():
-        log(f"Unchanged: {title} - no commit needed")
+        log(f"Unchanged: {title}")
+        if gh_out := os.environ.get("GITHUB_OUTPUT"):
+            with open(gh_out, "a", encoding="utf-8") as fh:
+                fh.write("changed=true\n")
         return EXIT_OK
 
     first_seen = now.isoformat()
