@@ -14,7 +14,10 @@ on:
 
 concurrency:
   group: ytm-widget
-  cancel-in-progress: false
+  # Queueing a second run just makes it start from a checkout the first run is
+  # about to invalidate, which is what produced the rebase conflicts. The work
+  # is idempotent and regenerates from live data, so superseding is safe.
+  cancel-in-progress: true
 
 permissions:
   contents: write
@@ -51,15 +54,24 @@ jobs:
             exit 0
           fi
           git commit -m "chore: update now playing card"
-          # A scheduled run can overlap a push, so the remote may have moved on.
-          # Rebase and retry rather than failing the run over a race.
+          # Overlapping runs both regenerate these files, so a rebase hits a
+          # content conflict rather than a clean replay. They are generated
+          # output, not authored work: on conflict, take the remote version and
+          # rebuild ours on top of it. Nothing is lost - the next run
+          # regenerates from live data anyway.
           for attempt in 1 2 3; do
             if git push; then
               echo "Pushed on attempt $attempt."
               exit 0
             fi
             echo "Push rejected (attempt $attempt); rebasing onto origin/main."
-            git pull --rebase --autostash origin main || exit 1
+            git fetch origin main
+            if ! git rebase -X theirs origin/main; then
+              echo "Rebase conflicted; keeping remote state and regenerating next run."
+              git rebase --abort || true
+              git reset --hard origin/main
+              exit 0
+            fi
           done
           echo "::error::Could not push after 3 attempts."
           exit 1
