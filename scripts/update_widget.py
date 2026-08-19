@@ -35,6 +35,10 @@ AUTH_MARKERS = (
     "invalid credentials",
     "please provide authentication",
     "cookie",
+    "invalid auth",
+    "auth json",
+    "file path provided",
+    "no such file",
 )
 
 
@@ -105,12 +109,24 @@ def main() -> int:
         fail_auth("YTM_HEADERS secret is empty or missing")
 
     try:
-        from ytmusicapi import YTMusic
+        from ytmusicapi import YTMusic, setup as ytm_setup
     except ImportError as exc:
         bail_transient(f"ytmusicapi import failed: {exc}")
 
+    # The secret may hold either raw browser headers ("Key: value" lines, which
+    # is what DevTools "Copy All" produces) or an already-converted JSON blob.
+    # ytmusicapi only accepts the latter, so convert when needed.
+    auth = headers_raw
+    if not headers_raw.lstrip().startswith("{"):
+        try:
+            auth = ytm_setup(headers_raw=headers_raw)
+        except Exception as exc:  # noqa: BLE001
+            fail_auth(f"could not parse YTM_HEADERS as browser headers: {exc}")
+        if isinstance(auth, dict):
+            auth = json.dumps(auth)
+
     try:
-        yt = YTMusic(headers_raw)
+        yt = YTMusic(auth)
     except Exception as exc:  # noqa: BLE001
         if looks_like_auth_error(exc):
             fail_auth(f"could not initialise client: {exc}")
