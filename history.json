@@ -1,0 +1,15 @@
+{
+ "updated": "2026-08-19T06:30:21.586356+00:00",
+ "window_days": 7,
+ "note": "Counts are derived from 30-minute polling, not from a play-count API. Tracks played between polls are not observed, so these undercount actual plays.",
+ "observations": [
+  {
+   "videoId": "-IrHSWo-MIY",
+   "title": "High On You",
+   "artist": "Jind Universe",
+   "album": "High On You",
+   "thumbnail": "https://yt3.googleusercontent.com/Eavf4u9mpASWVfdX81COcQkeIenzQAgg-9yrios_G_h0cGHL-NfGUrY9teyKnVSuxlx2-GPWy1jCVME6=w120-h120-l90-rj",
+   "seen": "2026-08-19T06:30:21.586356+00:00"
+  }
+ ]
+}
