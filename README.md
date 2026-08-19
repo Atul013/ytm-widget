@@ -1,8 +1,9 @@
 # YT Music Widget
 
-A card showing the last track played on my YouTube Music account, in my GitHub
-profile README. It refreshes every 30 minutes. There is no server — a scheduled
-GitHub Action does the work and commits the result back to this repository.
+Two cards for my GitHub profile README: the last track played on my YouTube
+Music account, and the most played of the past week. They refresh every 20
+minutes. There is no server — a scheduled GitHub Action does the work and
+commits the results back to this repository.
 
 ![Last played](https://raw.githubusercontent.com/Atul013/ytm-widget/main/music.svg)
 
@@ -29,22 +30,27 @@ one, and a better fit if live is what matters to you.
 
 ## Play counts are observed, not reported
 
-There is no play-count API either — nothing in `ytmusicapi` returns "times
-played". `get_history()` is a flat recency list with no counts and no timestamps.
+There is no play-count API either, and the reason is subtler than it first
+looks. `get_history()` returns roughly 200 recent entries — but **every
+appearance carries its own `videoId`**. Replay a song and it comes back with a
+different id, indistinguishable from a different track. Any count derived from a
+single response is therefore always 1.
 
-So the weekly card counts what the workflow itself sees. Every 30 minutes it
-records the current top-of-history track, and a track is counted once per
-observation. A track still sitting at the top on the next poll is the same play,
-not a new one.
+So counts come from our own polling. Each run diffs the full feed against the
+log and records what is new; because the feed reaches back ~200 tracks, songs
+played *between* polls are still captured. A track that shows up again on a
+later run is a replay we genuinely witnessed. Counting is keyed on title and
+artist, since the ids cannot be matched across appearances.
 
-This **undercounts, by design**. Anything played and replaced between two polls
-is never observed, so short tracks are missed more often than long ones, and a
-heavy listening session collapses into a handful of observations. Treat the
-ranking as directionally right rather than exact — the card says "approximate"
-for this reason.
+**Counts are a floor, not an exact tally.** Two limits produce that:
 
-Observations older than 7 days are pruned, and the log is capped at 4000 entries.
-The card is empty on day one and becomes meaningful after a few days of listening.
+- A song replayed twice inside one polling window is seen once.
+- The initial backfill has no timestamps, so those plays are recorded but not
+  attributed to a specific moment.
+
+Plays older than 7 days are pruned and the log is capped at 4000 entries. Until
+you actually replay something, every count sits at 1 and the ordering is simply
+recency — that is the data being honest, not the card being broken.
 
 ## Why a GitHub Action instead of a hosted service
 
@@ -65,12 +71,13 @@ already minutes stale by nature.
 ## How it works
 
 ```
-GitHub Action (cron: */30)
+GitHub Action (cron: */20)
   └─ ytmusicapi, auth from YTM_HEADERS secret (converted in memory)
-     └─ get_history()[0]
-        └─ compare with state.json
-           ├─ same track  → exit, no commit
-           └─ new track   → render music.svg → commit
+     └─ get_history()          ~200 entries, newest first
+        ├─ diff against history.json → append new plays → render top.svg
+        └─ history[0] vs state.json
+           ├─ same track  → no commit
+           └─ new track   → render music.svg → commit → update profile link
 ```
 
 History is tied to your **Google account, not a device.** Tracks played in the
@@ -137,15 +144,46 @@ repository instead.
 **Schedule** — edit the cron in `.github/workflows/widget.yml`:
 
 ```yaml
-- cron: "*/30 * * * *"   # every 30 minutes
+- cron: "*/20 * * * *"   # every 20 minutes
 ```
 
-GitHub's scheduled runners are best-effort and slip under load, so treat any
-interval as a ceiling rather than a promise. Below about 15 minutes you are mostly
-adding runs, not freshness.
+GitHub's scheduled runners are best-effort. In practice runs are not merely
+delayed — **entire firings get dropped**, which left the card stale for hours
+during development. A shorter interval makes each miss cost less, but nothing at
+the cron level guarantees delivery. For real reliability, trigger
+`workflow_dispatch` from an external scheduler instead.
 
 **Appearance** — `scripts/render.py` holds the whole card: 420×140, with light and
 dark palettes driven by `prefers-color-scheme` so it suits either GitHub theme.
+
+## Making the card clickable
+
+GitHub strips `<a>` elements inside SVG, so the card cannot carry its own link —
+it has to be wrapped in the README markup instead. But the track changes, so the
+href has to be rewritten each time, and the profile README lives in a *different*
+repository than this workflow. `GITHUB_TOKEN` only reaches the repo the workflow
+runs in, so this needs a fine-grained PAT.
+
+Optional — skip it and the cards still work, just without the link.
+
+1. Create a [fine-grained token](https://github.com/settings/personal-access-tokens/new)
+   scoped to **only** your profile repository, with **Contents: Read and write**.
+   Nothing else.
+2. Store it as a secret named `PROFILE_TOKEN`.
+3. Put these markers in your profile README where the card should go:
+
+```
+<!--YTM:START-->
+<!--YTM:END-->
+```
+
+Only the text between the markers is ever touched; missing or malformed markers
+are a no-op with a warning rather than an edit. An expired token fails the run
+loudly instead of skipping silently.
+
+Note this commits to your profile repository on every track change — dozens of
+commits a day. If that history noise is unwelcome, link the card to
+`music.youtube.com/library/history` instead and skip the token entirely.
 
 ## Failure handling
 
@@ -179,7 +217,8 @@ invalidates them**, not the passage of time. Closing the browser is fine.
 
 ## Known limitations
 
-- **Up to ~30 minutes stale**, plus runner slippage. 40–50 minute gaps are normal.
+- **Up to ~20 minutes stale**, and GitHub drops scheduled runs, so longer gaps
+  happen. Manual dispatch always works.
 - **The relative timestamp is approximate.** History entries carry no played-at
   field, so elapsed time is measured from when the workflow first observed the
   change — not when you actually played the track.
@@ -189,8 +228,8 @@ invalidates them**, not the passage of time. Closing the browser is fine.
   account, or you listen in incognito, nothing is recorded and the card never moves.
 - **Scheduled workflows are disabled after 60 days of repository inactivity.**
   Normal listening produces commits, which counts as activity.
-- **Weekly counts undercount actual plays**, because polling is coarser than
-  listening. See "Play counts are observed, not reported" above.
+- **Weekly counts are a floor.** Replays inside one polling window collapse into
+  a single entry. See "Play counts are observed, not reported" above.
 - **A silently dead workflow is not alerted.** If runs stop entirely, nothing
   fails, so nothing notifies. A dead-man's-switch (e.g. Healthchecks.io) would
   cover this; it is deliberately out of scope here.
@@ -202,10 +241,11 @@ invalidates them**, not the passage of time. Closing the browser is fine.
 | `.github/workflows/widget.yml` | Cron, commit-if-changed, issue-on-auth-failure |
 | `scripts/update_widget.py` | Fetch, state comparison, error classification |
 | `scripts/render.py` | SVG template and text escaping |
-| `scripts/history_log.py` | Rolling observation log and weekly ranking |
+| `scripts/history_log.py` | Rolling play log, feed diffing, and ranking |
 | `scripts/render_top.py` | Most-played card template |
+| `scripts/update_profile.py` | Rewrites the track link in the profile README |
 | `state.json` | Last seen track and first-observed timestamp |
-| `history.json` | Rolling 7-day observation log |
+| `history.json` | Rolling 7-day play log |
 | `music.svg` | The last-played card |
 | `top.svg` | The most-played-this-week card |
 
