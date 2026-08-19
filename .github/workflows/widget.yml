@@ -48,10 +48,21 @@ jobs:
           git add music.svg state.json top.svg history.json
           if git diff --staged --quiet; then
             echo "Nothing staged; skipping commit."
-          else
-            git commit -m "chore: update now playing card"
-            git push
+            exit 0
           fi
+          git commit -m "chore: update now playing card"
+          # A scheduled run can overlap a push, so the remote may have moved on.
+          # Rebase and retry rather than failing the run over a race.
+          for attempt in 1 2 3; do
+            if git push; then
+              echo "Pushed on attempt $attempt."
+              exit 0
+            fi
+            echo "Push rejected (attempt $attempt); rebasing onto origin/main."
+            git pull --rebase --autostash origin main || exit 1
+          done
+          echo "::error::Could not push after 3 attempts."
+          exit 1
 
       # Auth failures are the only case that alerts. Transient errors exit 0
       # inside the script and simply retry on the next run.
