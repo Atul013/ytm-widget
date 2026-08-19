@@ -2,9 +2,9 @@ name: Update YT Music widget
 
 on:
   schedule:
-    # Every 30 minutes. GitHub's scheduled runners slip under load,
-    # so treat this as a target rather than a guarantee.
-    - cron: "*/30 * * * *"
+    # GitHub drops scheduled runs under load - entire firings, not just delays.
+    # A tighter interval means a skipped run costs less.
+    - cron: "*/20 * * * *"
   workflow_dispatch:
   push:
     branches: [main]
