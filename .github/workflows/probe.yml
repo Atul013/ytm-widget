@@ -1,0 +1,28 @@
+name: Probe history order
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - env:
+          YTM_HEADERS: ${{ secrets.YTM_HEADERS }}
+        run: |
+          python - <<'PY'
+          import os
+          from ytmusicapi import YTMusic, setup as ytm_setup
+          raw = os.environ["YTM_HEADERS"]
+          auth = raw if raw.lstrip().startswith("{") else ytm_setup(headers_raw=raw)
+          h = YTMusic(auth).get_history()
+          print(f"total entries: {len(h)}")
+          for i, t in enumerate(h[:14]):
+              arts = ", ".join(a.get("name","") for a in (t.get("artists") or []))
+              print(f"  [{i}] {t.get('title','?')} - {arts}")
+          PY
