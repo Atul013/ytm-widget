@@ -6,6 +6,8 @@ GitHub Action does the work and commits the result back to this repository.
 
 ![Last played](https://raw.githubusercontent.com/Atul013/ytm-widget/main/music.svg)
 
+![Most played this week](https://raw.githubusercontent.com/Atul013/ytm-widget/main/top.svg)
+
 ---
 
 ## The constraint everything else follows from
@@ -24,6 +26,25 @@ If you want a genuinely live now-playing card, scrobble to Last.fm (via Web
 Scrobbler or the mobile app) and use a Last.fm widget instead. Last.fm receives a
 "now playing" signal *while* a track plays. That is a different project from this
 one, and a better fit if live is what matters to you.
+
+## Play counts are observed, not reported
+
+There is no play-count API either — nothing in `ytmusicapi` returns "times
+played". `get_history()` is a flat recency list with no counts and no timestamps.
+
+So the weekly card counts what the workflow itself sees. Every 30 minutes it
+records the current top-of-history track, and a track is counted once per
+observation. A track still sitting at the top on the next poll is the same play,
+not a new one.
+
+This **undercounts, by design**. Anything played and replaced between two polls
+is never observed, so short tracks are missed more often than long ones, and a
+heavy listening session collapses into a handful of observations. Treat the
+ranking as directionally right rather than exact — the card says "approximate"
+for this reason.
+
+Observations older than 7 days are pruned, and the log is capped at 4000 entries.
+The card is empty on day one and becomes meaningful after a few days of listening.
 
 ## Why a GitHub Action instead of a hosted service
 
@@ -168,6 +189,8 @@ invalidates them**, not the passage of time. Closing the browser is fine.
   account, or you listen in incognito, nothing is recorded and the card never moves.
 - **Scheduled workflows are disabled after 60 days of repository inactivity.**
   Normal listening produces commits, which counts as activity.
+- **Weekly counts undercount actual plays**, because polling is coarser than
+  listening. See "Play counts are observed, not reported" above.
 - **A silently dead workflow is not alerted.** If runs stop entirely, nothing
   fails, so nothing notifies. A dead-man's-switch (e.g. Healthchecks.io) would
   cover this; it is deliberately out of scope here.
@@ -179,8 +202,12 @@ invalidates them**, not the passage of time. Closing the browser is fine.
 | `.github/workflows/widget.yml` | Cron, commit-if-changed, issue-on-auth-failure |
 | `scripts/update_widget.py` | Fetch, state comparison, error classification |
 | `scripts/render.py` | SVG template and text escaping |
+| `scripts/history_log.py` | Rolling observation log and weekly ranking |
+| `scripts/render_top.py` | Most-played card template |
 | `state.json` | Last seen track and first-observed timestamp |
-| `music.svg` | The generated card |
+| `history.json` | Rolling 7-day observation log |
+| `music.svg` | The last-played card |
+| `top.svg` | The most-played-this-week card |
 
 ## Prior art
 
