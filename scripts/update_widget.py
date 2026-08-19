@@ -173,6 +173,7 @@ def main() -> int:
         if gh_out := os.environ.get("GITHUB_OUTPUT"):
             with open(gh_out, "a", encoding="utf-8") as fh:
                 fh.write("changed=true\n")
+                fh.write(f"video_id={video_id}\n")
         return EXIT_OK
 
     first_seen = now.isoformat()
@@ -200,6 +201,7 @@ def main() -> int:
     if gh_out := os.environ.get("GITHUB_OUTPUT"):
         with open(gh_out, "a", encoding="utf-8") as fh:
             fh.write("changed=true\n")
+            fh.write(f"video_id={video_id}\n")
     return EXIT_OK
 
 

@@ -64,6 +64,20 @@ jobs:
           echo "::error::Could not push after 3 attempts."
           exit 1
 
+      # The card image is static, but the track it points at is not. Rewrite the
+      # link in the profile README so a visitor clicking the card lands on the
+      # song currently shown. Needs a token with contents:write on that repo -
+      # GITHUB_TOKEN only reaches this one. Skipped silently when unconfigured.
+      - name: Update profile link
+        if: steps.update.outputs.video_id != ''
+        env:
+          PROFILE_TOKEN: ${{ secrets.PROFILE_TOKEN }}
+          PROFILE_REPO: ${{ github.repository_owner }}/${{ github.repository_owner }}
+          PROFILE_PATH: README.md
+          TRACK_VIDEO_ID: ${{ steps.update.outputs.video_id }}
+          CARD_URL: https://raw.githubusercontent.com/${{ github.repository }}/main/music.svg
+        run: python scripts/update_profile.py
+
       # Auth failures are the only case that alerts. Transient errors exit 0
       # inside the script and simply retry on the next run.
       - name: Open re-auth issue
