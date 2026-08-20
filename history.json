@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-20T15:15:34.478868+00:00",
+ "updated": "2026-08-20T15:52:21.462294+00:00",
  "window_days": 7,
  "note": "Counts are built by diffing the full get_history() feed on each run, so tracks played between polls are captured. The feed lists each appearance once, so counts are a floor.",
  "plays": [
@@ -1634,6 +1634,30 @@
    "album": "Nee Aaro",
    "thumbnail": "https://yt3.googleusercontent.com/yW4VgU1ORX1mLEuRDCoKjDCJVEr8dZYVBFp4BBKp_s0Hq7z3TO4k3424mrNaH14U2TR1OCwYBxeo7YJx=w120-h120-l90-rj",
    "seen": "2026-08-20T11:46:55.860341+00:00"
+  },
+  {
+   "videoId": "rQkAq2rl5J0",
+   "title": "Way Back Home [Sam Feldt Edit] (feat. Conor Maynard)",
+   "artist": "SHAUN",
+   "album": "Way Back Home (Sam Feldt Edit)",
+   "thumbnail": "https://yt3.googleusercontent.com/0pSjXJkxWx7tNjS0oP8JxLSG5wzsUDuFZv3GX41O9emofCkBWExzkAfiYB-Ey54fFwJRiga8JYnA4yo=w120-h120-l90-rj",
+   "seen": "2026-08-20T15:52:21.462294+00:00"
+  },
+  {
+   "videoId": "GjsgBHV_KKk",
+   "title": "Blue (feat. Wonstein)",
+   "artist": "SHAUN",
+   "album": "#0055b7",
+   "thumbnail": "https://yt3.googleusercontent.com/aSWohpsHED7ZqHmJU34MXWbrHxp5H2qcGj9uAK1HltPI6LRvaeW5Eex3MY5KYsOuvm5r_KYFd0qVQkYO=w120-h120-l90-rj",
+   "seen": "2026-08-20T15:52:21.462294+00:00"
+  },
+  {
+   "videoId": "WLNp0g2GBxQ",
+   "title": "Coming Home (feat. Skylar Grey)",
+   "artist": "Diddy - Dirty Money",
+   "album": "Last Train To Paris (Deluxe)",
+   "thumbnail": "https://yt3.googleusercontent.com/IufaFpHA0XucS3V0gCk37jM6gQkYlDJmy7wTQyrtrOAfzn0m97CD6l7VDivuZuYu2avhSXE2_fzYJzOu=w120-h120-l90-rj",
+   "seen": "2026-08-20T15:52:21.462294+00:00"
   }
  ]
 }
