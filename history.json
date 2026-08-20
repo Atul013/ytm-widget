@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-20T04:37:24.637570+00:00",
+ "updated": "2026-08-20T05:14:51.961770+00:00",
  "window_days": 7,
  "note": "Counts are built by diffing the full get_history() feed on each run, so tracks played between polls are captured. The feed lists each appearance once, so counts are a floor.",
  "plays": [
@@ -1602,6 +1602,22 @@
    "album": "Akale (From \"9 (Nine) Malayalam\")",
    "thumbnail": "https://yt3.googleusercontent.com/ZltxcJbyd7HcBCIwJK_U-yfAXpYg4SK53X5_uJQlW-J2vv8AIdt9vnv-zy_TIZ4MEUSk2h2gYaPj-ks=w120-h120-l90-rj",
    "seen": "2026-08-19T16:48:31.666433+00:00"
+  },
+  {
+   "videoId": "qXaVgflsrWU",
+   "title": "Anuraagam (Male Version)",
+   "artist": "Shaan Rahman, Rahul Subrahmanian",
+   "album": "Thattathin Marayathu (Original Motion Picture Soundtrack)",
+   "thumbnail": "https://yt3.googleusercontent.com/Bd1JOsfCZ7qNYNxzmBo-wyStlaGCzGxzd09Wo58Ycku3arMZCAsqFz0YRgn1FFmMp5vk0qnRlzL0nP1dLQ=w120-h120-l90-rj",
+   "seen": "2026-08-20T05:14:51.961770+00:00"
+  },
+  {
+   "videoId": "B2xVob0dehU",
+   "title": "Lailakame (From \"Ezra\")",
+   "artist": "Rahul Raj, Haricharan, & Harinarayanan BK",
+   "album": "Ezra",
+   "thumbnail": "https://yt3.googleusercontent.com/wOFB-XjUN0k15ZVhU75iBcq-TExQGgQUVpr7Rp7ulBtkYQ00X3pK_ftaMVtkK--8__DvxtM_CWAuKiV0rQ=w120-h120-l90-rj",
+   "seen": "2026-08-20T05:14:51.961770+00:00"
   }
  ]
 }
