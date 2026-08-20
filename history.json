@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-20T15:52:21.462294+00:00",
+ "updated": "2026-08-20T16:35:29.455122+00:00",
  "window_days": 7,
  "note": "Counts are built by diffing the full get_history() feed on each run, so tracks played between polls are captured. The feed lists each appearance once, so counts are a floor.",
  "plays": [
@@ -1658,6 +1658,46 @@
    "album": "Last Train To Paris (Deluxe)",
    "thumbnail": "https://yt3.googleusercontent.com/IufaFpHA0XucS3V0gCk37jM6gQkYlDJmy7wTQyrtrOAfzn0m97CD6l7VDivuZuYu2avhSXE2_fzYJzOu=w120-h120-l90-rj",
    "seen": "2026-08-20T15:52:21.462294+00:00"
+  },
+  {
+   "videoId": "0sBoEsF6Q7Q",
+   "title": "Someone To Forget",
+   "artist": "ARMNHMR, Lights",
+   "album": "Someone To Forget",
+   "thumbnail": "https://yt3.googleusercontent.com/DjhfFl_U49rz-wlmB3ml7cl61pnH34-W5EWT6QiJwYBsa7znJ9SW4XYcqZ_DXzxWWu8RMzrTeVD1EG4=w120-h120-l90-rj",
+   "seen": "2026-08-20T16:35:29.455122+00:00"
+  },
+  {
+   "videoId": "k0PneaOKCh4",
+   "title": "Back To Then (feat. Luma)",
+   "artist": "Klaxx, Luma",
+   "album": "Back To Then (ft. Luma)",
+   "thumbnail": "https://yt3.googleusercontent.com/zJ2X2RIwto5dGC83l1coJphEbJhvArldUXoqEPyHo1OkoKg9GZq7i9DQOvui6H73ZkNLFOT91idA3BBvRQ=w120-h120-l90-rj",
+   "seen": "2026-08-20T16:35:29.455122+00:00"
+  },
+  {
+   "videoId": "hiOkMt7iJ7g",
+   "title": "Enough",
+   "artist": "The Tech Thieves",
+   "album": "Enough",
+   "thumbnail": "https://yt3.googleusercontent.com/Sfmuwfx4q21uNyIu3hBv_TIqaZtrcAUNXwod2gCGOcTavDa74bc2h7ISdYipvmNWNEdYE7rQgWhD6h6j=w120-h120-l90-rj",
+   "seen": "2026-08-20T16:35:29.455122+00:00"
+  },
+  {
+   "videoId": "CvQWEl2EHt4",
+   "title": "Letting Go",
+   "artist": "Hogland, KIDDO",
+   "album": "Letting Go",
+   "thumbnail": "https://yt3.googleusercontent.com/TYlSXR0IEmVFTFgLKqxyWIbLuUr6NPotfIJyXJeZVMFnZ3PMSNefo9p9feMbgPi3Yf6UTre8_oRglYg=w120-h120-l90-rj",
+   "seen": "2026-08-20T16:35:29.455122+00:00"
+  },
+  {
+   "videoId": "jcAn44985E0",
+   "title": "Ye Tune Kya Kiya",
+   "artist": "Pritam, Javed Bashir, & Rajat Arora",
+   "album": "Once Upon Ay Time In Mumbai Dobaara !",
+   "thumbnail": "https://yt3.googleusercontent.com/R_QicRMB-xkzL9da-ECxhlQISUiLkaWYKbBZPzm-wk7tkRtEw3PDFYqd2aUWjlpT1YWvVFPJ17NBhjWE=w120-h120-l90-rj",
+   "seen": "2026-08-20T16:35:29.455122+00:00"
   }
  ]
 }
