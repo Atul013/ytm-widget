@@ -159,7 +159,7 @@ def main() -> int:
     plays, fresh_count = history_log.record_history(plays, history, now)
     history_log.save(LOG_PATH, plays, now)
 
-    top = history_log.top_tracks(plays, limit=5)
+    top = history_log.recent_tracks(plays, limit=5)
     top_art = [fetch_thumbnail(e.get("thumbnail")) for e in top]
     TOP_SVG_PATH.write_text(
         render_top.render(top, top_art, days=history_log.WINDOW_DAYS),

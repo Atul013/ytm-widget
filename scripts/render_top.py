@@ -1,8 +1,11 @@
-"""SVG renderer for the most-played card.
+"""SVG renderer for the recently-played card.
 
-Counts come from our own polling, not from the API, so a track shows "2 plays"
-only once we have observed it in the feed on two separate runs. Until a song is
-actually replayed everything sits at one play and the ordering is recency.
+This lists recent tracks in order rather than ranking them by play count.
+get_history() gives every appearance its own videoId, so the feed cannot say
+"played N times"; counting across polls only increments on a replay we happen
+to catch, which for varied listening almost never outranks the steady stream of
+new tracks. A "most played" ranking would therefore be recency wearing a
+misleading label, so the card says what it actually shows.
 """
 
 from __future__ import annotations
@@ -32,8 +35,7 @@ def _row(index: int, entry: dict[str, Any], art_b64: bytes | None, y: int) -> st
     rank = index + 1
     title = _esc(_truncate(entry.get("title", "Unknown"), 26))
     artist = _esc(_truncate(entry.get("artist", "Unknown artist"), 30))
-    count = int(entry.get("count", 1))
-    plays = "1 play" if count == 1 else f"{count} plays"
+    album = _esc(_truncate(entry.get("album") or "", 16))
     art_x = PAD + 22
     text_x = art_x + ART + 12
 
@@ -54,7 +56,7 @@ def _row(index: int, entry: dict[str, Any], art_b64: bytes | None, y: int) -> st
   {art}
   <text x="{text_x}" y="{y + 24}" class="title">{title}</text>
   <text x="{text_x}" y="{y + 40}" class="artist">{artist}</text>
-  <text x="{CARD_W - PAD}" y="{y + 32}" class="plays" text-anchor="end">{plays}</text>"""
+  <text x="{CARD_W - PAD}" y="{y + 32}" class="plays" text-anchor="end">{album}</text>"""
 
 
 def render(entries: list[dict[str, Any]], art: list[bytes | None], days: int = 7) -> str:
@@ -68,7 +70,7 @@ def render(entries: list[dict[str, Any]], art: list[bytes | None], days: int = 7
         for i, e in enumerate(entries)
     )
 
-    return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{CARD_W}" height="{card_h}" viewBox="0 0 {CARD_W} {card_h}" role="img" aria-label="Most played tracks over the last {days} days">
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{CARD_W}" height="{card_h}" viewBox="0 0 {CARD_W} {card_h}" role="img" aria-label="Recently played tracks">
   <style>
     :root {{
       --bg: #ffffff; --border: #d0d7de; --fg: #1f2328;
@@ -90,9 +92,9 @@ def render(entries: list[dict[str, Any]], art: list[bytes | None], days: int = 7
     .foot {{ font-size: 9px; fill: var(--sub); opacity: .75; }}
   </style>
   <rect class="card" x="0.5" y="0.5" width="{CARD_W - 1}" height="{card_h - 1}" rx="12"/>
-  <text x="{PAD}" y="28" class="head">MOST PLAYED · LAST {days} DAYS</text>
+  <text x="{PAD}" y="28" class="head">RECENTLY PLAYED</text>
 {rows}
-  <text x="{PAD}" y="{card_h - 9}" class="foot">Counted from polling — a floor, not exact</text>
+  <text x="{PAD}" y="{card_h - 9}" class="foot">Most recent first</text>
 </svg>
 """
 

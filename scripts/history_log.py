@@ -151,42 +151,30 @@ def _track_key(play: dict[str, Any]) -> str:
     return f"{play.get('title', '')}␟{play.get('artist', '')}".lower()
 
 
-def top_tracks(plays: list[dict[str, Any]], limit: int = 5) -> list[dict[str, Any]]:
-    """Rank tracks by how many separate plays we have witnessed.
+def recent_tracks(plays: list[dict[str, Any]], limit: int = 5) -> list[dict[str, Any]]:
+    """Return the most recently played tracks, newest first.
 
-    Counts come from our own polling, not the API. A track appearing in the
-    feed again on a later run is a play we genuinely observed. This means
-    counts are a floor: replays inside a single polling window collapse into
-    one, and plays from before logging began are not attributed.
+    Deliberately not a "most played" ranking. get_history() gives every
+    appearance its own videoId, so the feed itself cannot express play counts,
+    and counting across polls only increments when a replay happens to fall
+    between two runs. For varied listening that almost never outranks the
+    steady arrival of new tracks, so a count-ordered card would show the same
+    thing this does while claiming to mean something else.
 
-    Ties break by recency, so equally-played tracks show most recent first.
+    Repeats of the same track are collapsed so one song on loop does not fill
+    the card.
     """
-    tallies: dict[str, dict[str, Any]] = {}
-    for play in plays:
+    seen_keys: set[str] = set()
+    recent: list[dict[str, Any]] = []
+    for play in reversed(plays):
         key = _track_key(play)
-        if not key.strip("␟"):
+        if not key.strip("␟") or key in seen_keys:
             continue
-        entry = tallies.setdefault(
-            key,
-            {
-                "videoId": play.get("videoId"),
-                "title": play.get("title", "Unknown"),
-                "artist": play.get("artist", "Unknown artist"),
-                "album": play.get("album"),
-                "thumbnail": play.get("thumbnail"),
-                "count": 0,
-                "last_seen": play.get("seen", ""),
-            },
-        )
-        entry["count"] += 1
-        if play.get("seen", "") >= entry["last_seen"]:
-            entry["last_seen"] = play.get("seen", "")
-            if play.get("thumbnail"):
-                entry["thumbnail"] = play["thumbnail"]
-
-    ranked = sorted(tallies.values(), key=lambda e: e["last_seen"], reverse=True)
-    ranked.sort(key=lambda e: -e["count"])
-    return ranked[:limit]
+        seen_keys.add(key)
+        recent.append(play)
+        if len(recent) >= limit:
+            break
+    return recent
 
 
 def save(path: Path, plays: list[dict[str, Any]], now: datetime) -> None:
