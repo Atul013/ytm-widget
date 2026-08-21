@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-21T16:03:38.976364+00:00",
+ "updated": "2026-08-21T16:55:41.091985+00:00",
  "window_days": 7,
  "note": "Counts are built by diffing the full get_history() feed on each run, so tracks played between polls are captured. The feed lists each appearance once, so counts are a floor.",
  "plays": [
@@ -1746,6 +1746,30 @@
    "album": "Chak De! Jeet Le!",
    "thumbnail": "https://yt3.googleusercontent.com/yD45Mqc4ZT0yXM77-279lVBMYHita8Uh7ITQUdhON0fNu7blXJa4gmm6X5-FBNf3mYI9JMzrIv-HgHSA=w120-h120-l90-rj",
    "seen": "2026-08-21T01:19:16.049189+00:00"
+  },
+  {
+   "videoId": "Rm_gznXaaKY",
+   "title": "Powerhouse x Disco",
+   "artist": "Anirudh Ravichander",
+   "album": "Coolie (Original Background Score)",
+   "thumbnail": "https://yt3.googleusercontent.com/5H1HcWU-7P5d6ocD8M17WWkZv49GIJ5yltJkqXNChqgmejv_Npw6hRriNefAUlaqnDQct5ESBikFtGJ2=w120-h120-l90-rj",
+   "seen": "2026-08-21T16:55:41.091985+00:00"
+  },
+  {
+   "videoId": "GoAAlACyXBg",
+   "title": "The Wild Theme (From \"OM Chapter 1: Udhiram - The Blood Wood\")",
+   "artist": "Sai Abhyankkar, Dhanush",
+   "album": "The Wild Theme (From \"OM Chapter 1: Udhiram - The Blood Wood\")",
+   "thumbnail": "https://yt3.googleusercontent.com/bQ3SsnDi8E2gYDPd3Xy9uJIB3mu72SocOCkwaR5oTMHv0jrMCUO6TipMiz5xenkXxHQmJdPInlpJfmE3=w120-h120-l90-rj",
+   "seen": "2026-08-21T16:55:41.091985+00:00"
+  },
+  {
+   "videoId": "LlxvGoyvwCM",
+   "title": "Sitara",
+   "artist": "Keethan, Shravan Sridhar",
+   "album": "Sitara",
+   "thumbnail": "https://yt3.googleusercontent.com/Ly2lTb4UFM6hs7eSKlq0pvChOqygJQdjQi8lMJVlhrWqU3_c4yVx-TnSE8_nQil0lXQlPAdxR41aQnar=w120-h120-l90-rj",
+   "seen": "2026-08-21T16:55:41.091985+00:00"
   }
  ]
 }
