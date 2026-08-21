@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-20T23:43:53.340156+00:00",
+ "updated": "2026-08-21T01:19:16.049189+00:00",
  "window_days": 7,
  "note": "Counts are built by diffing the full get_history() feed on each run, so tracks played between polls are captured. The feed lists each appearance once, so counts are a floor.",
  "plays": [
@@ -1714,6 +1714,38 @@
    "album": "Billu",
    "thumbnail": "https://yt3.googleusercontent.com/YKQ9BpvZomJuLVVb8u5X26Wtui29wMMJiNPxtuxUWKgLvjT5d2WGXMf_bgLS1wfFIUxJkZaG5Hsto8hy4Q=w120-h120-l90-rj",
    "seen": "2026-08-20T17:05:09.852844+00:00"
+  },
+  {
+   "videoId": "z-PUf6k552I",
+   "title": "Soulmate",
+   "artist": "Badshah, Arijit Singh",
+   "album": "Ek Tha Raja",
+   "thumbnail": "https://yt3.googleusercontent.com/X9z43RY-8TZE8Vtxq7vuvRIWhp57i02tcFvgEUOUPSALtLloNQNnfwAZLDYPCCebcl2PSf2a6AMxBsnD=w120-h120-l90-rj",
+   "seen": "2026-08-21T01:19:16.049189+00:00"
+  },
+  {
+   "videoId": "jbtF5YR6hNU",
+   "title": "TERE NAINA",
+   "artist": "SHANKAR MAHADEVAN, SHREYA GHOSHAL, SHANKAR-EHSAAN-LOY, and RAJAT ARORA",
+   "album": "CHANDNI CHOWK TO CHINA",
+   "thumbnail": "https://yt3.googleusercontent.com/I8KeKRq6MeeABeze6ljBCClbMkQN1EoO3wa-_sSuftkbtqgFbNjYCpkjoTpJVY3znP8b8UQjI_CPGjRz=w120-h120-l90-rj",
+   "seen": "2026-08-21T01:19:16.049189+00:00"
+  },
+  {
+   "videoId": "U04qjtXo7V0",
+   "title": "Paro",
+   "artist": "Aditya Rikhari, UNPLG'd",
+   "album": "Paro",
+   "thumbnail": "https://yt3.googleusercontent.com/YLIBg-fDFvMkLJIpLzH1mRvLrtjo4Tm1qtQnJaLqMltMqkc9gXvxQkFU3-KYZ2ax70C5l0Fmfl3rVCCB=w120-h120-l90-rj",
+   "seen": "2026-08-21T01:19:16.049189+00:00"
+  },
+  {
+   "videoId": "5tzXovJu_HE",
+   "title": "Shubhaarambh (From \"Kai Po Che\")",
+   "artist": "Amit Trivedi, Shruti Pathak, Divya Kumar",
+   "album": "Chak De! Jeet Le!",
+   "thumbnail": "https://yt3.googleusercontent.com/yD45Mqc4ZT0yXM77-279lVBMYHita8Uh7ITQUdhON0fNu7blXJa4gmm6X5-FBNf3mYI9JMzrIv-HgHSA=w120-h120-l90-rj",
+   "seen": "2026-08-21T01:19:16.049189+00:00"
   }
  ]
 }
