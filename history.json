@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-23T06:41:11.104862+00:00",
+ "updated": "2026-08-23T12:40:23.125280+00:00",
  "window_days": 7,
  "note": "Counts are built by diffing the full get_history() feed on each run, so tracks played between polls are captured. The feed lists each appearance once, so counts are a floor.",
  "plays": [
@@ -1802,6 +1802,22 @@
    "album": "I Will Rise Again",
    "thumbnail": "https://yt3.googleusercontent.com/VRptzYcI_c760ipSTxGtgr5T9CkzEZADIZrhNu8KQLo1T49LPlN1sxX28rC5CRy94E7AfVk7vrOh9X5L=w120-h120-l90-rj",
    "seen": "2026-08-23T03:50:38.752397+00:00"
+  },
+  {
+   "videoId": "0jUsYGOuH0k",
+   "title": "Standing",
+   "artist": "Get into Zone",
+   "album": "Standing",
+   "thumbnail": "https://yt3.googleusercontent.com/kMlsCYgINfSkyriFekBXZ7PuYP2zvb9qXmak5VX-BdTZO10VeHYybGQ7w47bi11mMDhhx8sByxJYRH9O=w120-h120-l90-rj",
+   "seen": "2026-08-23T12:40:23.125280+00:00"
+  },
+  {
+   "videoId": "QX1KRphxnQc",
+   "title": "Headlights (feat. KIDDO)",
+   "artist": "Alok, Alan Walker",
+   "album": "Headlights",
+   "thumbnail": "https://yt3.googleusercontent.com/qziwPDf687hi8YbgMsj6ZejyYGyz2IjiDspt20Em2j9EHkVe1EzbVwHYKUZgq6NAt-Y4ykWqe4tBwJh4=w120-h120-l90-rj",
+   "seen": "2026-08-23T12:40:23.125280+00:00"
   }
  ]
 }
