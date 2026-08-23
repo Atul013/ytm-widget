@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-23T14:31:28.403278+00:00",
+ "updated": "2026-08-23T16:57:54.778510+00:00",
  "window_days": 7,
  "note": "Counts are built by diffing the full get_history() feed on each run, so tracks played between polls are captured. The feed lists each appearance once, so counts are a floor.",
  "plays": [
@@ -1818,6 +1818,70 @@
    "album": "Headlights",
    "thumbnail": "https://yt3.googleusercontent.com/qziwPDf687hi8YbgMsj6ZejyYGyz2IjiDspt20Em2j9EHkVe1EzbVwHYKUZgq6NAt-Y4ykWqe4tBwJh4=w120-h120-l90-rj",
    "seen": "2026-08-23T12:40:23.125280+00:00"
+  },
+  {
+   "videoId": "plBo82zWBZo",
+   "title": "Geetha's Rescue",
+   "artist": "Thaman S",
+   "album": "They Call Him OG (Original Background Score)",
+   "thumbnail": "https://yt3.googleusercontent.com/tF-4_kur4Td_PAY5Lu8gm3xB_8Pr3EYYi5bBbkgz-Kx4rN0ZB9m2rVFQle7zSyn3QXU2H9QlULXUpTX7=w120-h120-l90-rj",
+   "seen": "2026-08-23T16:57:54.778510+00:00"
+  },
+  {
+   "videoId": "ABDHXdKNEVM",
+   "title": "Arvy Nacht - Something Just Like This (Official Music Video)",
+   "artist": "Archy Nacht, 133K views",
+   "album": null,
+   "thumbnail": "https://i.ytimg.com/vi/ABDHXdKNEVM/hqdefault.jpg?sqp=-oaymwEWCJADEOEBIAQqCggAEOADGC0guwJIWg&rs=AMzJL3mA7HCdrKtT3xiD2v5EFYNZeY89dA",
+   "seen": "2026-08-23T16:57:54.778510+00:00"
+  },
+  {
+   "videoId": "TQ7098nXlZw",
+   "title": "Made of Storms",
+   "artist": "Orkestral Studio",
+   "album": "Made of Storms",
+   "thumbnail": "https://yt3.googleusercontent.com/NSr6P7TD6yKYt4kPDS7tz558GbHNyv3cNRXKTd30YmL4sE8OtNX19ZWt_JYI-DSkD6IddRQATTpXpsA6PA=w120-h120-l90-rj",
+   "seen": "2026-08-23T16:57:54.778510+00:00"
+  },
+  {
+   "videoId": "1hUrxMNIv64",
+   "title": "Work Harder",
+   "artist": "Get into Zone",
+   "album": "Work Harder",
+   "thumbnail": "https://yt3.googleusercontent.com/Xkg2ZONih9lapKY9MJmQMlebeCbnMDespvq6xEJyeb7Tjgv8zraPFlIdDB8aDiUB62uyXL3BYv0i3XucUQ=w120-h120-l90-rj",
+   "seen": "2026-08-23T16:57:54.778510+00:00"
+  },
+  {
+   "videoId": "uxSTXH6DAOQ",
+   "title": "One More Chapter",
+   "artist": "Decayed Souls",
+   "album": "One More Chapter",
+   "thumbnail": "https://yt3.googleusercontent.com/EDCE7LpGy5N_2lKq5OuKYOK-Qso9vTifmr4VyN6E6hFI5lkPL34763RmpmG-4974ZqVfnSX_nMVnPMgh=w120-h120-l90-rj",
+   "seen": "2026-08-23T16:57:54.778510+00:00"
+  },
+  {
+   "videoId": "ZOWgczZ4LzI",
+   "title": "Born for This",
+   "artist": "Orkestral Studio",
+   "album": "Born for This",
+   "thumbnail": "https://yt3.googleusercontent.com/gYUdV9_Ti2JCYlTqsbfZxMYzPqMwIhlv-QFKgP1CffxUa8eK4QTw6a9605hDWC7C7IkSPsLDUDvarTGV=w120-h120-l90-rj",
+   "seen": "2026-08-23T16:57:54.778510+00:00"
+  },
+  {
+   "videoId": "ON34AXOPO94",
+   "title": "The Only Way Is Up",
+   "artist": "APOC",
+   "album": "The Only Way Is Up",
+   "thumbnail": "https://yt3.googleusercontent.com/3QOTiMo1_6_XKGh2gY0SmO7B6q88dBA-LJBYb-R1_VU6dY0P8Azt--x23vA9aAENBJfDfJv9cxL8Y9le=w120-h120-l90-rj",
+   "seen": "2026-08-23T16:57:54.778510+00:00"
+  },
+  {
+   "videoId": "LjAy2qy5qNg",
+   "title": "Rise Above",
+   "artist": "Orkestral Studio",
+   "album": "Rise Above",
+   "thumbnail": "https://yt3.googleusercontent.com/RkDZiShC1OqwvSnypLM_GpJWhK8Ullz_goQp5hAdfKBG7rd8NYpYHt2DYvlKptefHqv0Uz7mQKOegtja=w120-h120-l90-rj",
+   "seen": "2026-08-23T16:57:54.778510+00:00"
   }
  ]
 }
