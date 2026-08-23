@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-23T16:57:54.778510+00:00",
+ "updated": "2026-08-23T19:01:25.207523+00:00",
  "window_days": 7,
  "note": "Counts are built by diffing the full get_history() feed on each run, so tracks played between polls are captured. The feed lists each appearance once, so counts are a floor.",
  "plays": [
@@ -1882,6 +1882,14 @@
    "album": "Rise Above",
    "thumbnail": "https://yt3.googleusercontent.com/RkDZiShC1OqwvSnypLM_GpJWhK8Ullz_goQp5hAdfKBG7rd8NYpYHt2DYvlKptefHqv0Uz7mQKOegtja=w120-h120-l90-rj",
    "seen": "2026-08-23T16:57:54.778510+00:00"
+  },
+  {
+   "videoId": "OKHwboX9Z_8",
+   "title": "Think Like A King",
+   "artist": "Get into Zone",
+   "album": "Think Like A King",
+   "thumbnail": "https://yt3.googleusercontent.com/NZApsYHxj960qCHpSa_4gBONdtis5Jyr1Fvp_8LBKjnImYh79YAGKqeZIvem7O6oN66TUJRxrJpYqQpeMg=w120-h120-l90-rj",
+   "seen": "2026-08-23T19:01:25.207523+00:00"
   }
  ]
 }
