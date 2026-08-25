@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-25T10:53:45.404749+00:00",
+ "updated": "2026-08-25T15:09:19.635264+00:00",
  "window_days": 7,
  "note": "Counts are built by diffing the full get_history() feed on each run, so tracks played between polls are captured. The feed lists each appearance once, so counts are a floor.",
  "plays": [
@@ -1890,6 +1890,14 @@
    "album": "Think Like A King",
    "thumbnail": "https://yt3.googleusercontent.com/NZApsYHxj960qCHpSa_4gBONdtis5Jyr1Fvp_8LBKjnImYh79YAGKqeZIvem7O6oN66TUJRxrJpYqQpeMg=w120-h120-l90-rj",
    "seen": "2026-08-23T19:01:25.207523+00:00"
+  },
+  {
+   "videoId": "7bHLX6oKfbA",
+   "title": "Manpaatha",
+   "artist": "Shaan Rahman",
+   "album": "Mili (Original Motion Picture Soundtrack)",
+   "thumbnail": "https://yt3.googleusercontent.com/WRajCo-Tjl3VU7HcpFeoy58joosBnB-B1iYeF8REDCaPxF_ymfgu1o8Y_gjYSz9cdPrpl4pmDrrg749v=w120-h120-l90-rj",
+   "seen": "2026-08-25T15:09:19.635264+00:00"
   }
  ]
 }
