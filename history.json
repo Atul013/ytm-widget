@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-28T05:28:30.232077+00:00",
+ "updated": "2026-08-28T05:31:32.188293+00:00",
  "window_days": 7,
  "note": "Counts are built by diffing the full get_history() feed on each run, so tracks played between polls are captured. The feed lists each appearance once, so counts are a floor.",
  "plays": [
@@ -170,6 +170,14 @@
    "album": "Gauthamante Radham",
    "thumbnail": "https://yt3.googleusercontent.com/fzIHDJdV2lesDuLTXXdaJIEt0xukGRM2WHo6Mx6LGW32Hw0ipV_R8fRXCWPoMThJ_GAGD-qavP2IrHvn=w120-h120-l90-rj",
    "seen": "2026-08-28T05:28:30.232077+00:00"
+  },
+  {
+   "videoId": "eUDTNL0xick",
+   "title": "Chalte Chalte - Rishi Roy",
+   "artist": "Rishi Roy, 2M views",
+   "album": null,
+   "thumbnail": "https://i.ytimg.com/vi/eUDTNL0xick/hqdefault.jpg?sqp=-oaymwEWCJADEOEBIAQqCggAEOADGC0guwJIWg&rs=AMzJL3nQxhLU3kjCjrMtiHyHX6K5ggRrBg",
+   "seen": "2026-08-28T05:31:32.188293+00:00"
   }
  ]
 }
