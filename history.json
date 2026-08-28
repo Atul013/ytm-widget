@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-28T05:33:49.137121+00:00",
+ "updated": "2026-08-28T15:39:07.184330+00:00",
  "window_days": 7,
  "note": "Counts are built by diffing the full get_history() feed on each run, so tracks played between polls are captured. The feed lists each appearance once, so counts are a floor.",
  "plays": [
@@ -178,6 +178,214 @@
    "album": null,
    "thumbnail": "https://i.ytimg.com/vi/eUDTNL0xick/hqdefault.jpg?sqp=-oaymwEWCJADEOEBIAQqCggAEOADGC0guwJIWg&rs=AMzJL3nQxhLU3kjCjrMtiHyHX6K5ggRrBg",
    "seen": "2026-08-28T05:31:32.188293+00:00"
+  },
+  {
+   "videoId": "EV5982RVl6w",
+   "title": "Tumhare Hi Rahenge Hum (From \"Stree 2\")",
+   "artist": "Sachin-Jigar, Varun Jain, Amitabh Bhattacharya, Shilpa Rao",
+   "album": "Tumhare Hi Rahenge Hum (From \"Stree 2\")",
+   "thumbnail": "https://yt3.googleusercontent.com/8NTzCCz3WRc3S79xaaxXG4GCK9RiXvW4kaIphqN4t1KdkmAwgYyDAbHzSbVZS_XJkl2FnTjC2d9iaGmE=w120-h120-l90-rj",
+   "seen": "2026-08-28T15:39:07.184330+00:00"
+  },
+  {
+   "videoId": "7Iqe_yCYwvM",
+   "title": "Raanjhan",
+   "artist": "Parampara Tandon",
+   "album": "Do Patti",
+   "thumbnail": "https://yt3.googleusercontent.com/HDxRWaagMWwCIkzB4Fo-WCTWvdiO4e_RJ2cw7WLaizqVCCh58hYL9dXnkKBdkLVj11ydoN9mtguJTSxZ=w120-h120-l90-rj",
+   "seen": "2026-08-28T15:39:07.184330+00:00"
+  },
+  {
+   "videoId": "Soijojp1UHQ",
+   "title": "Time of Our Lives",
+   "artist": "Chawki",
+   "album": "Time of Our Lives",
+   "thumbnail": "https://yt3.googleusercontent.com/tQtcGdopz3I21X3WBI5d3fmUjlfcWsBJN7YhRo7M9XYSAwK5E3hZf7HIPlDVJ_spX3v78lylGX9ZGqXs=w120-h120-l90-rj",
+   "seen": "2026-08-28T15:39:07.184330+00:00"
+  },
+  {
+   "videoId": "EDXtosSXnLw",
+   "title": "Coming Back Stronger",
+   "artist": "Silverberg, Sarah Reeves",
+   "album": "Coming Back Stronger",
+   "thumbnail": "https://yt3.googleusercontent.com/sLscq8ufVEQkGtPs_JGg6fbn1vzsB64GOGUU4RBGUeo00lkxtKjiHd15ccuPO4Vfv17UyC2L8dmDG3CI=w120-h120-l90-rj",
+   "seen": "2026-08-28T15:39:07.184330+00:00"
+  },
+  {
+   "videoId": "kyqJ_FId-_w",
+   "title": "Bairan",
+   "artist": "Banjaare",
+   "album": "Bairan",
+   "thumbnail": "https://yt3.googleusercontent.com/LF_Gw__z3R6L4Mbz1cW7RDKXYiNcYTxBR2QrrWk0gXgUDhv9uOx01XLtvlmf4PGBISXNIlp2r0XxLU_2=w120-h120-l90-rj",
+   "seen": "2026-08-28T15:39:07.184330+00:00"
+  },
+  {
+   "videoId": "wEG8y7r4aY4",
+   "title": "Gulaab",
+   "artist": "Mitraz",
+   "album": "Zehen",
+   "thumbnail": "https://yt3.googleusercontent.com/DPNpBja76rG-M24RxRXIBhyXVH8mZO22sIz18mjiZrDVkyYYlaC9clT3yztoYzFBJgTkiGPN48uNR788=w120-h120-l90-rj",
+   "seen": "2026-08-28T15:39:07.184330+00:00"
+  },
+  {
+   "videoId": "sW5AgVN4lQ4",
+   "title": "Jupiter Mazha (Lofi Flip) (feat. Sruthi)",
+   "artist": "blu sonic",
+   "album": "Jupiter Mazha (Lofi Flip)",
+   "thumbnail": "https://yt3.googleusercontent.com/A82t7sn5v67vZ5Yulf3JPV11_jlPmdJ-KyS0YhSkpW8pwiMDOqYAc5qI6Jojs6EUJDI0J7_N9pyJ58GePA=w120-h120-l90-rj",
+   "seen": "2026-08-28T15:39:07.184330+00:00"
+  },
+  {
+   "videoId": "gXmhEiru2pU",
+   "title": "Freaky Friday (feat. Chris Brown)",
+   "artist": "Lil Dicky",
+   "album": "Freaky Friday",
+   "thumbnail": "https://yt3.googleusercontent.com/lwyaoysCjYfL9h5t4Oy8EWdZx39L3coV77eaaiefTM0kRl9vwcYaYxA1lT5JRvbFblunivLKxHNMWO24=w120-h120-l90-rj",
+   "seen": "2026-08-28T15:39:07.184330+00:00"
+  },
+  {
+   "videoId": "Gpzsdfnwssg",
+   "title": "En Vaanavillai Santhithen",
+   "artist": "Karthikeya Dev",
+   "album": "En Vaanavillai Santhithen",
+   "thumbnail": "https://yt3.googleusercontent.com/EbvdmhOI-zqlKkpuIP4a07ThOqgu_g_zX-errot-9nGzfEDj-XWUS9-JY_sRou5sPq51BgSD24S7IdgX_Q=w120-h120-l90-rj",
+   "seen": "2026-08-28T15:39:07.184330+00:00"
+  },
+  {
+   "videoId": "0_9TCak--cw",
+   "title": "Pal Pal",
+   "artist": "Afusic, AliSoomroMusic",
+   "album": "Pal Pal",
+   "thumbnail": "https://yt3.googleusercontent.com/GoaPJH-3iAmrBnIQrELduHeCjzRHy45rHb3AbNEncitKZGaZQwMkeu5sYDyvW5VgvpPZSD_VsAjmEOv9=w120-h120-l90-rj",
+   "seen": "2026-08-28T15:39:07.184330+00:00"
+  },
+  {
+   "videoId": "K98nl-9famU",
+   "title": "Legendary (feat. Futuristic)",
+   "artist": "City Wolf, Rachel Lorin, Hollywood Black",
+   "album": "Legendary",
+   "thumbnail": "https://yt3.googleusercontent.com/i5-RGmChkJBfSQJ_M8lXxxq8SICVY-ajssBi8NSjICI5fCyJ3NxSbUG0EUqHA8tcJYXIskAyDx4QpKA=w120-h120-l90-rj",
+   "seen": "2026-08-28T15:39:07.184330+00:00"
+  },
+  {
+   "videoId": "OC2o2ElQLDU",
+   "title": "sun saawariya",
+   "artist": "Accha Insaan, AtharvaMusic, Yaani Karnawat",
+   "album": "sun saawariya",
+   "thumbnail": "https://yt3.googleusercontent.com/TjsqNB7BUi0haOCSw_Lcb_DIKJ0FAEBLZL_m8lcNb2CXE19ob2uM-uUxSrwXmL9yL98J23FOqRDlqk1S=w120-h120-l90-rj",
+   "seen": "2026-08-28T15:39:07.184330+00:00"
+  },
+  {
+   "videoId": "hQ0UcvucvSA",
+   "title": "Jadoo",
+   "artist": "Akshath",
+   "album": "Jadoo",
+   "thumbnail": "https://yt3.googleusercontent.com/59k-43rZsQwXFqPgf0pAjWBu7aF-qOr5nvWQaGTSbxZsSt5PQTfdzrCkbwNtywnjESBKwi2QyYjyWp8=w120-h120-l90-rj",
+   "seen": "2026-08-28T15:39:07.184330+00:00"
+  },
+  {
+   "videoId": "QWRupdKq6Dw",
+   "title": "Endhan Nenjil (feat. Rolex Rasathy)",
+   "artist": "Thibz Se.",
+   "album": "Retro Rewind, the 90s",
+   "thumbnail": "https://yt3.googleusercontent.com/qZgq5hJ9vPqwR61Avihw4B6KuMGly4CCbvcu7MJEevYdUnxhE4AlCk_-1qIIDvdd3ZHk8-FJ1Ix_zng6=w120-h120-l90-rj",
+   "seen": "2026-08-28T15:39:07.184330+00:00"
+  },
+  {
+   "videoId": "cnjk-G3TPb8",
+   "title": "Sitara",
+   "artist": "Aashiq Khan, Mitika Kanwar, Denny",
+   "album": "Sitara",
+   "thumbnail": "https://yt3.googleusercontent.com/0TCm4y_pcFzTcYCSNJZnzbQxXNL-WSz8ZN_L2kwi39w77-I6ZMWb5aiHE4WJJBT4-AnR0G5eFPZ51JQ=w120-h120-l90-rj",
+   "seen": "2026-08-28T15:39:07.184330+00:00"
+  },
+  {
+   "videoId": "nvX6AHUqjwk",
+   "title": "Aziyat",
+   "artist": "Pratsofficial",
+   "album": "Aziyat",
+   "thumbnail": "https://yt3.googleusercontent.com/iSnEcb6YPOtbTtV5wJcg0MepzLZBwoXVe8yliO3jk1aG9aaouCpdFCsWLH5MJgCM4JZZgpV4NDjhqnpDVw=w120-h120-l90-rj",
+   "seen": "2026-08-28T15:39:07.184330+00:00"
+  },
+  {
+   "videoId": "jAnWrlSuE4c",
+   "title": "Sahiba",
+   "artist": "Jasleen Royal, Stebin Ben, Vijay Deverakonda, Radhikka Madan, Priya Saraiya, and Aditya Sharma",
+   "album": "Sahiba",
+   "thumbnail": "https://yt3.googleusercontent.com/osEQplA2FDktP-YRPgzOX_YLDOd_fRxHM7oIV5wLVWrT75Bv3bzzaIPifi4RaSEr20Ph5wcyBiJgrE4=w120-h120-l90-rj",
+   "seen": "2026-08-28T15:39:07.184330+00:00"
+  },
+  {
+   "videoId": "_VDfMumEWD4",
+   "title": "Walk Through the Fire",
+   "artist": "Zayde W\u00f8lf, Ruelle",
+   "album": "Walk Through the Fire",
+   "thumbnail": "https://yt3.googleusercontent.com/rAZWJ4NIElIlvxHo2iLg9zsK38YGdxTkBIhjqv2cAaWvPJfX0W73_SOPD5GmitUDtHdkcCaRG80XGVrYpg=w120-h120-l90-rj",
+   "seen": "2026-08-28T15:39:07.184330+00:00"
+  },
+  {
+   "videoId": "JR4LlpL27ao",
+   "title": "ASAAN",
+   "artist": "Rishi Roy, Dabzee",
+   "album": "ASAAN",
+   "thumbnail": "https://yt3.googleusercontent.com/rgwT2yDCSFbvNZxD56qrpHDTWWiiCAKbO70iL8Wx2JudeAVYk3HHA3X2d5Ks40Ww6zAiWzlmJcR3qpjAxw=w120-h120-l90-rj",
+   "seen": "2026-08-28T15:39:07.184330+00:00"
+  },
+  {
+   "videoId": "CBqHkqWNaCU",
+   "title": "Nenjodu Cherthu",
+   "artist": "Sreejith Edavana, Saachin Raj Chelory, Naveen Maraar, and Aalap Raju",
+   "album": "Yuvvh (Original Motion Picture Soundtrack)",
+   "thumbnail": "https://yt3.googleusercontent.com/C7iOwVUNervGupdkziiX2HNYLwyxA-5dGjWDVUFzGrom0BsiUU60i93WE_0myvoYxA8flRYOmRgHfiDB-A=w120-h120-l90-rj",
+   "seen": "2026-08-28T15:39:07.184330+00:00"
+  },
+  {
+   "videoId": "MWv0HqPwMs4",
+   "title": "Woh Raat",
+   "artist": "Shivoryx, Ronit Vinta",
+   "album": "Woh Raat",
+   "thumbnail": "https://yt3.googleusercontent.com/1kZXnuRZv_bTHoKbDawyqXTfhJoGnvGQB0hcXQzG9SKFxJqxpAol8b5VZIr5Rj_itvXudodkArHO-UhY=w120-h120-l90-rj",
+   "seen": "2026-08-28T15:39:07.184330+00:00"
+  },
+  {
+   "videoId": "cq6wytt4XBQ",
+   "title": "Vasudeva Sutam Devam",
+   "artist": "Dharma Devotional",
+   "album": "Vasudeva Sutam Devam",
+   "thumbnail": "https://yt3.googleusercontent.com/eFcLgh1b55miQtxx4_ClUnl5MBWCDAvtWIfJdLWrhE9YaDpb5GryEqftcBDF-_gA7UtLTFImRXKxZjl9=w120-h120-l90-rj",
+   "seen": "2026-08-28T15:39:07.184330+00:00"
+  },
+  {
+   "videoId": "ayjbqDY_qnw",
+   "title": "The Fighter",
+   "artist": "Gym Class Heroes, Ryan Tedder",
+   "album": "The Papercut Chronicles II",
+   "thumbnail": "https://yt3.googleusercontent.com/PpNmBAYCLSgsWDxcvJ4jEDFHtnB2cczrEqNH67TuFB0GAZXGXOB2YU_Ljn69B786XqD_Qq13eSKWWAE=w120-h120-l90-rj",
+   "seen": "2026-08-28T15:39:07.184330+00:00"
+  },
+  {
+   "videoId": "FYHKeHYlVA4",
+   "title": "Pee Loon",
+   "artist": "Pritam, Mohit Chauhan, Irshad Kamil",
+   "album": "Once Upon A Time In Mumbaai",
+   "thumbnail": "https://yt3.googleusercontent.com/T2RFkxdEtEpYvGVmCn1QI8Ov7mEMWyIDO9BfpVHXJQTJR0Gb5I9o2_7mZoQfm_oCfwUyIe5hoI9sO2s=w120-h120-l90-rj",
+   "seen": "2026-08-28T15:39:07.184330+00:00"
+  },
+  {
+   "videoId": "XFOVXD1qttc",
+   "title": "Suniyan Suniyan",
+   "artist": "Juss, Mixsingh",
+   "album": "Suniyan Suniyan",
+   "thumbnail": "https://yt3.googleusercontent.com/1Rik9Jho_LZKBUiUnxR3h8oLhdquioSjV397tkNe66_PK7zbehd1Hy7ZAX25OebqXuTjj4bl0kFGBc_M=w120-h120-l90-rj",
+   "seen": "2026-08-28T15:39:07.184330+00:00"
+  },
+  {
+   "videoId": "ojAwm4jtcYw",
+   "title": "Meghave",
+   "artist": "Sumedh K",
+   "album": "Meghave",
+   "thumbnail": "https://yt3.googleusercontent.com/YlGkpo4dMYebWO_qNZvzf-8yRCYXb7gvwU5xPMx77ackZYmNUkV4a6bkRyReAKMRf8FE828BKk_nOGPu=w120-h120-l90-rj",
+   "seen": "2026-08-28T15:39:07.184330+00:00"
   }
  ]
 }
