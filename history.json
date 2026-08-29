@@ -1,32 +1,8 @@
 {
- "updated": "2026-08-28T15:39:07.184330+00:00",
+ "updated": "2026-08-29T00:07:00.140797+00:00",
  "window_days": 7,
  "note": "Counts are built by diffing the full get_history() feed on each run, so tracks played between polls are captured. The feed lists each appearance once, so counts are a floor.",
  "plays": [
-  {
-   "videoId": "Rm_gznXaaKY",
-   "title": "Powerhouse x Disco",
-   "artist": "Anirudh Ravichander",
-   "album": "Coolie (Original Background Score)",
-   "thumbnail": "https://yt3.googleusercontent.com/5H1HcWU-7P5d6ocD8M17WWkZv49GIJ5yltJkqXNChqgmejv_Npw6hRriNefAUlaqnDQct5ESBikFtGJ2=w120-h120-l90-rj",
-   "seen": "2026-08-21T16:55:41.091985+00:00"
-  },
-  {
-   "videoId": "GoAAlACyXBg",
-   "title": "The Wild Theme (From \"OM Chapter 1: Udhiram - The Blood Wood\")",
-   "artist": "Sai Abhyankkar, Dhanush",
-   "album": "The Wild Theme (From \"OM Chapter 1: Udhiram - The Blood Wood\")",
-   "thumbnail": "https://yt3.googleusercontent.com/bQ3SsnDi8E2gYDPd3Xy9uJIB3mu72SocOCkwaR5oTMHv0jrMCUO6TipMiz5xenkXxHQmJdPInlpJfmE3=w120-h120-l90-rj",
-   "seen": "2026-08-21T16:55:41.091985+00:00"
-  },
-  {
-   "videoId": "LlxvGoyvwCM",
-   "title": "Sitara",
-   "artist": "Keethan, Shravan Sridhar",
-   "album": "Sitara",
-   "thumbnail": "https://yt3.googleusercontent.com/Ly2lTb4UFM6hs7eSKlq0pvChOqygJQdjQi8lMJVlhrWqU3_c4yVx-TnSE8_nQil0lXQlPAdxR41aQnar=w120-h120-l90-rj",
-   "seen": "2026-08-21T16:55:41.091985+00:00"
-  },
   {
    "videoId": "3v4CmXTPGLE",
    "title": "THUNAI VARUVEN",
@@ -386,6 +362,30 @@
    "album": "Meghave",
    "thumbnail": "https://yt3.googleusercontent.com/YlGkpo4dMYebWO_qNZvzf-8yRCYXb7gvwU5xPMx77ackZYmNUkV4a6bkRyReAKMRf8FE828BKk_nOGPu=w120-h120-l90-rj",
    "seen": "2026-08-28T15:39:07.184330+00:00"
+  },
+  {
+   "videoId": "H-wn8HTNMTs",
+   "title": "Tell Me It's Okay",
+   "artist": "Fells",
+   "album": "Tell Me It's Okay",
+   "thumbnail": "https://yt3.googleusercontent.com/7j0lsm9ZN5r86XkLiiNmoSwasLxPDsNz7iyZcxSYUPEeh9AjCNcRbQFKX_vwIa4jDHe7a1sY1d7JzvCO=w120-h120-l90-rj",
+   "seen": "2026-08-29T00:07:00.140797+00:00"
+  },
+  {
+   "videoId": "mXDsuuVs4nM",
+   "title": "Yaanam",
+   "artist": "Sangeeth Vijayan",
+   "album": "Yaanam",
+   "thumbnail": "https://yt3.googleusercontent.com/_AfYW9IOFCJTe7LdoS_y1JQViwHTmm0CNMtJ002lQUatQdKTm1oGB9sFlW3ZIaKEqrFnZ15Bgju6ebqM=w120-h120-l90-rj",
+   "seen": "2026-08-29T00:07:00.140797+00:00"
+  },
+  {
+   "videoId": "g6K5f77G3A4",
+   "title": "Falsafa",
+   "artist": "Tanzeel Khan",
+   "album": "Falsafa",
+   "thumbnail": "https://yt3.googleusercontent.com/OXRP09XBdQJTrCl63il6KlSSgg8aKDV_FDPv2fV5sJeAOTpG2oX_Df9Uqfk_MBF5USgO5HmlfgJ97hs=w120-h120-l90-rj",
+   "seen": "2026-08-29T00:07:00.140797+00:00"
   }
  ]
 }
