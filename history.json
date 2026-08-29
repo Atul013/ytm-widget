@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-29T07:10:30.616953+00:00",
+ "updated": "2026-08-29T13:12:04.913153+00:00",
  "window_days": 7,
  "note": "Counts are built by diffing the full get_history() feed on each run, so tracks played between polls are captured. The feed lists each appearance once, so counts are a floor.",
  "plays": [
@@ -530,6 +530,102 @@
    "album": "Neram (Original Motion Picture Soundtrack)",
    "thumbnail": "https://yt3.googleusercontent.com/7-aa15avzXt6H0EgwGVU8fXjw7WaqzhR5T-j8KDBp5bYd4boLwrx3NwrwchFBcINt3u8d3FfI4V1YPIE=w120-h120-l90-rj",
    "seen": "2026-08-29T07:10:30.616953+00:00"
+  },
+  {
+   "videoId": "SayyURuKzmA",
+   "title": "Ulsava Rave",
+   "artist": "ThirumaLi, Fejo, ThudWiser",
+   "album": "Ulsava Rave",
+   "thumbnail": "https://yt3.googleusercontent.com/tuBv9L_2yhnySfB4ON1qBBah2VTV1T7vsxj9aWc0eWAKYROiSmAC-k5cf7lIlxIUmGAuBIEvg848l5dfqQ=w120-h120-l90-rj",
+   "seen": "2026-08-29T13:12:04.913153+00:00"
+  },
+  {
+   "videoId": "3kfHArnP1v4",
+   "title": "Meesaya Murukku",
+   "artist": "Hiphop Tamizha, Kharesma Ravichandran",
+   "album": "Meesaya Murukku (Original Motion Picture Soundtrack)",
+   "thumbnail": "https://yt3.googleusercontent.com/DZCWdWtJOwfVVhY5SyL0fLJd7MiASVewYGhVgCt6fMNtALojd95uCuViJt3WP_NoWdLwtEGEOUaxTVPo=w120-h120-l90-rj",
+   "seen": "2026-08-29T13:12:04.913153+00:00"
+  },
+  {
+   "videoId": "BP_lDdvPZ-U",
+   "title": "Ennilerinju",
+   "artist": "Rzee, Sithara Krishnakumar",
+   "album": "Jacobinte Swargarajyam",
+   "thumbnail": "https://yt3.googleusercontent.com/T3gtw0KVCDisX9SYFMUMyaYmZQQR6ClhSF6tru7L-YuQIP0BibqE5tl9yQ2Lh5DppZLyWReIrxtmKnW9=w120-h120-l90-rj",
+   "seen": "2026-08-29T13:12:04.913153+00:00"
+  },
+  {
+   "videoId": "0W8a3gLyuKo",
+   "title": "Ugraroopini",
+   "artist": "Bibin Ashok, Vaikom Vijayalakshmi, Hareesh Mohanan",
+   "album": "Prakambanam (Original Motion Picture Soundtrack)",
+   "thumbnail": "https://yt3.googleusercontent.com/GznlH8BtHlquAUp5E7O8pJ-JNfx_wX6YE5Ri3nznHnuUsDwWwENMGtSjd47xlm5aDdQYdQYoSK5fHSqG=w120-h120-l90-rj",
+   "seen": "2026-08-29T13:12:04.913153+00:00"
+  },
+  {
+   "videoId": "WIbmUGWykTw",
+   "title": "Karuppa Kooda Va (From \"Karuppu\")",
+   "artist": "Sai Abhyankkar, V.M. Mahalingam, Pa. Vijay",
+   "album": "Karuppa Kooda Va (From \"Karuppu\")",
+   "thumbnail": "https://yt3.googleusercontent.com/9ejQki8p5r46B0jGiMa7talsLlmp-W0oAM6Vu8CoSQjcCxcj39RceRHfS-E86H-czomzbv429pxHrCxB=w120-h120-l90-rj",
+   "seen": "2026-08-29T13:12:04.913153+00:00"
+  },
+  {
+   "videoId": "lPXl1__XtFI",
+   "title": "Verappa (From \"Karuppu\")",
+   "artist": "Sai Abhyankkar, Arivu, Arun Srinivasan",
+   "album": "Verappa (From \"Karuppu\")",
+   "thumbnail": "https://yt3.googleusercontent.com/HhyRXLaau8hSDYnhSQBEtt_1aodQ4k7-nKZ-9yoOHpAxzXXeUGxjG0UWGAteJXAbejwezw8y7cKY2Dg=w120-h120-l90-rj",
+   "seen": "2026-08-29T13:12:04.913153+00:00"
+  },
+  {
+   "videoId": "qemjcgBJMCE",
+   "title": "God Mode (From \"Karuppu\")",
+   "artist": "Sai Abhyankkar, Gana Muthu, Vishnu Edavan",
+   "album": "God Mode (From \"Karuppu\")",
+   "thumbnail": "https://yt3.googleusercontent.com/LKAPdNFKZLbBZv9FqxiHammc1jDUa12AWhJOX_9vJd8wh6QmeWQz7CgKlwe9tXYiXZe0_KZH9J9Vcqdf=w120-h120-l90-rj",
+   "seen": "2026-08-29T13:12:04.913153+00:00"
+  },
+  {
+   "videoId": "eIeIkZ5Li88",
+   "title": "God Mode Begins",
+   "artist": "Sai Abhyankkar, Gana Muthu, Vishnu Edavan",
+   "album": "Karuppu (Original Motion Picture Soundtrack)",
+   "thumbnail": "https://yt3.googleusercontent.com/Rfn-_qN5DiTfj3CBcrGsMXXaMkG_7szLem600l0fLsNHOR58ZfR_LEpDPYRDs7ePUnMtDWmVydYIhjE=w120-h120-l90-rj",
+   "seen": "2026-08-29T13:12:04.913153+00:00"
+  },
+  {
+   "videoId": "Y943FiZ-Uqw",
+   "title": "Chammak Challo",
+   "artist": "Vishal-Shekhar, Akon, Hamsika Iyer",
+   "album": "Ra-One",
+   "thumbnail": "https://yt3.googleusercontent.com/ODhreTQufJgEezdnPVmP8OF5nefXi4Q9y5dm2CjpjFGks0f5SXKe5sYsd1oiRnB_1Bz1Ghj7Sat2guwp=w120-h120-l90-rj",
+   "seen": "2026-08-29T13:12:04.913153+00:00"
+  },
+  {
+   "videoId": "7dkvKhGlguM",
+   "title": "Pulkodiyil Thoomani (From \"Take Off\")",
+   "artist": "Shaan Rahman, Hesham Abdul Wahab",
+   "album": "Pulkodiyil Thoomani (From \"Take Off\")",
+   "thumbnail": "https://yt3.googleusercontent.com/6qKGt0ZhKHGkQbMyjRck9x2QUCBV7p4iGWb4Gk4w6hdvGuckbOlmtw0rVDcRkjNn_jGUwI_WHVi9po4=w120-h120-l90-rj",
+   "seen": "2026-08-29T13:12:04.913153+00:00"
+  },
+  {
+   "videoId": "AnlSgkx1YQY",
+   "title": "Karukara (feat. Elsa Sam)",
+   "artist": "Maara Maari",
+   "album": "Karukara",
+   "thumbnail": "https://yt3.googleusercontent.com/0BNQQeDXkoHIWGegN1xQA9cu0R7Gh5xEjLCNuCuIcKJOyE-SaJ8_CCojvUgtFkgZO3yT24iM-d9N0lf7=w120-h120-l90-rj",
+   "seen": "2026-08-29T13:12:04.913153+00:00"
+  },
+  {
+   "videoId": "3Qw3M7ibgaM",
+   "title": "Ranam Title Track",
+   "artist": "Jakes Bejoy, Ajaey Shravan, Neha S Nair, and Saint TFC",
+   "album": "Ranam",
+   "thumbnail": "https://yt3.googleusercontent.com/gsf_5CNag1JnEXO6Vn5_zin69eilb5XRJH7J-QlmSAIav0B-IN7f0AY37fGEIsPxiHSIQVR6bLQwvEDWVQ=w120-h120-l90-rj",
+   "seen": "2026-08-29T13:12:04.913153+00:00"
   }
  ]
 }
