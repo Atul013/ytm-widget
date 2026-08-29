@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-29T00:07:00.140797+00:00",
+ "updated": "2026-08-29T07:10:30.616953+00:00",
  "window_days": 7,
  "note": "Counts are built by diffing the full get_history() feed on each run, so tracks played between polls are captured. The feed lists each appearance once, so counts are a floor.",
  "plays": [
@@ -386,6 +386,150 @@
    "album": "Falsafa",
    "thumbnail": "https://yt3.googleusercontent.com/OXRP09XBdQJTrCl63il6KlSSgg8aKDV_FDPv2fV5sJeAOTpG2oX_Df9Uqfk_MBF5USgO5HmlfgJ97hs=w120-h120-l90-rj",
    "seen": "2026-08-29T00:07:00.140797+00:00"
+  },
+  {
+   "videoId": "DwZnNbx5Xtc",
+   "title": "I.O.Y.A (Ayyo Vayye)",
+   "artist": "Matadoria",
+   "album": "I.O.Y.A",
+   "thumbnail": "https://yt3.googleusercontent.com/r-N8CVwIU5S2-YIcufBJy-aSg3iIudMWXGzjK7YMSiqXsV7TEayXEIlvOcKtm2yMjxmgi1v3Nsde3hPs=w120-h120-l90-rj",
+   "seen": "2026-08-29T07:10:30.616953+00:00"
+  },
+  {
+   "videoId": "fyXAHZ_3nRY",
+   "title": "Innalekalil",
+   "artist": "Shaan Rahman, Niranj Suresh",
+   "album": "Godha (Original Motion Picture Soundtrack)",
+   "thumbnail": "https://yt3.googleusercontent.com/r8LNqoRy-AaDobd9mEF_TDFW-fa0QH1j0J2qS3D1YkY_wLHaj0GK87mg1xGre1xSbN0KHTTFnodp7z6vLg=w120-h120-l90-rj",
+   "seen": "2026-08-29T07:10:30.616953+00:00"
+  },
+  {
+   "videoId": "xdw5aWfg5-s",
+   "title": "Malang",
+   "artist": "Siddharth Mahadevan, Shilpa Rao",
+   "album": "Dhoom:3 - Malang",
+   "thumbnail": "https://yt3.googleusercontent.com/huRg8r5YYdkpDQbDHhwy4l0O6QfHh1zRHd7IQ5TCkwi3kPO5r2F2oR-rtwmOe714qTjtnHdKls2m1u0p=w120-h120-l90-rj",
+   "seen": "2026-08-29T07:10:30.616953+00:00"
+  },
+  {
+   "videoId": "1ujRCiGIpZM",
+   "title": "Padayatra (Live)",
+   "artist": "Job Kurian",
+   "album": "Padayatra (Live)",
+   "thumbnail": "https://yt3.googleusercontent.com/j1JO_XW1GEv_BVbvM4_-dArDgdPzLSYK9KOmhiAbLqRX3E2zdgHSUuYdT11Ms4ybUFM3u-YGlnC8bkM=w120-h120-l90-rj",
+   "seen": "2026-08-29T07:10:30.616953+00:00"
+  },
+  {
+   "videoId": "Ha4fSclVanI",
+   "title": "Jhol",
+   "artist": "Maanu, Annural Khalid",
+   "album": "Jhol",
+   "thumbnail": "https://yt3.googleusercontent.com/GP9v2CnfMkE8wF3zy1An4FECREeFYy-6Y4iS2OwvISYnOTF09e6sSfD5XYuUjgaiczGvliqbycu3Yp27=w120-h120-l90-rj",
+   "seen": "2026-08-29T07:10:30.616953+00:00"
+  },
+  {
+   "videoId": "CqS9O-6ok64",
+   "title": "Ve Maahi",
+   "artist": "Arijit Singh, Asees Kaur",
+   "album": "Kesari (Original Motion Picture Soundtrack)",
+   "thumbnail": "https://yt3.googleusercontent.com/ltLwVqAL7Sd32H9XwQ0m5Iv_JaBDC_8tSart5ifN8E-puzm6GtLzcM9HTHL_XV0AepCe4wrOprCvez8CJQ=w120-h120-l90-rj",
+   "seen": "2026-08-29T07:10:30.616953+00:00"
+  },
+  {
+   "videoId": "-BKv9ZDIXow",
+   "title": "Jeevana",
+   "artist": "KS Harisankar",
+   "album": "Jeevana",
+   "thumbnail": "https://yt3.googleusercontent.com/9GhcokjdqeV4sD1kri8o3kHwULabvEty1PhSp_f9dfifBK5MwSB-Al1_VL1zyamrO-iFuk1hp_iUcFyHLA=w120-h120-l90-rj",
+   "seen": "2026-08-29T07:10:30.616953+00:00"
+  },
+  {
+   "videoId": "Qsvga1oPoeE",
+   "title": "O Sanam",
+   "artist": "Akhil Sachdeva",
+   "album": "O Sanam",
+   "thumbnail": "https://yt3.googleusercontent.com/xd4g3VgUwJxnxJ6Ck2hBrgU1WHXaAa8iJ_HRWeujas1kq4veCvndmsuWev2RpbnV8IXtvGYDhIPiDnw=w120-h120-l90-rj",
+   "seen": "2026-08-29T07:10:30.616953+00:00"
+  },
+  {
+   "videoId": "I_FOdK8C8dE",
+   "title": "Jahaan",
+   "artist": "Lost Stories, JAI DHIR",
+   "album": "Marigold Soundsystem II",
+   "thumbnail": "https://yt3.googleusercontent.com/zPd96MjMWkPdNrta0LmyD3PEa7-ve2v4DtlAoKUP87Fm-Jkq1yVrl75TEDTMGmn8J_7Hi9I2oSrNisO5EA=w120-h120-l90-rj",
+   "seen": "2026-08-29T07:10:30.616953+00:00"
+  },
+  {
+   "videoId": "ZsikEcEcj8c",
+   "title": "Roobaroo",
+   "artist": "Akshath",
+   "album": "Lukkhe (Original Series Soundtrack)",
+   "thumbnail": "https://yt3.googleusercontent.com/a2XNpoG8-n5_pb7gljAQ6bnzBCukXJ6nG69pFbnbSAlJCOKDxjx8JqdbsGll3y7SgXkAX7TMstp0x6b4Sg=w120-h120-l90-rj",
+   "seen": "2026-08-29T07:10:30.616953+00:00"
+  },
+  {
+   "videoId": "oMOuQUjGDNg",
+   "title": "Poga Poga",
+   "artist": "G. V. Prakash Kumar, Eshwar, & Vineeth Sreenivasan",
+   "album": "Youth (Original Motion Picture Soundtrack)",
+   "thumbnail": "https://yt3.googleusercontent.com/N-vizP7lqQwN-EEwGrG_qxwBMEvxd-WHLyiuZYvpRG_koLIR8NupvKZsY363NgOV7uk2hb6V0N8jjUkCog=w120-h120-l90-rj",
+   "seen": "2026-08-29T07:10:30.616953+00:00"
+  },
+  {
+   "videoId": "V7LIAwCziUk",
+   "title": "Meri Saansein",
+   "artist": "Aditya Rikhari, Ravator, Rauhan Malik",
+   "album": "Meri Saansein",
+   "thumbnail": "https://yt3.googleusercontent.com/N_LlThYI0lOcBwXxvnaO_59YkiygkOpdP7m6Suy-TQTDxuGCza0ydvY1Ms-W4D7ZSkfoxJ3D602BnXWbSw=w120-h120-l90-rj",
+   "seen": "2026-08-29T07:10:30.616953+00:00"
+  },
+  {
+   "videoId": "uO1kR9sog-w",
+   "title": "Saanware",
+   "artist": "Akhil Sachdeva, Kartik Dev",
+   "album": "Saanware",
+   "thumbnail": "https://yt3.googleusercontent.com/2JFRD8SBYJEbFdUC2ApayvihK2R0K-aQ43MPfrosT7zfmMOdjczfZAExqND0Er7TCBMGOlWpf3BvxCpp=w120-h120-l90-rj",
+   "seen": "2026-08-29T07:10:30.616953+00:00"
+  },
+  {
+   "videoId": "IW6ct9S4MYc",
+   "title": "Aane Wala Star",
+   "artist": "Sai Abhyankkar & Dholu bholu",
+   "album": "Aane Wala Star",
+   "thumbnail": "https://yt3.googleusercontent.com/ZYZd-tWFIaQctMoQ_GFWUEYX7gQpcmmuhnoItueMDYlhtpvXPu57qKcZk4YdBr_WpVZgEXA1fyNHFvKF=w120-h120-l90-rj",
+   "seen": "2026-08-29T07:10:30.616953+00:00"
+  },
+  {
+   "videoId": "VgfdC9SjP3E",
+   "title": "Ilavanka Poove (From \"Take Off\")",
+   "artist": "Shaan Rahman",
+   "album": "Ilavanka Poove (From \"Take Off\")",
+   "thumbnail": "https://yt3.googleusercontent.com/8RUz3pSATFedjrAJd_37u_w7WvdInD-oN1lTm0zj35W7lIeV0Mh4J0VcvfyKFyK36Re-ObvXs0z5QIc=w120-h120-l90-rj",
+   "seen": "2026-08-29T07:10:30.616953+00:00"
+  },
+  {
+   "videoId": "dISUmY4EvXE",
+   "title": "That Girl X Vaazha Anthem Mashup Version 2",
+   "artist": "Maadhav R K [MaRK], 2.2K views",
+   "album": null,
+   "thumbnail": "https://i.ytimg.com/vi/dISUmY4EvXE/hqdefault.jpg?sqp=-oaymwEWCJADEOEBIAQqCggAEOADGC0guwJIWg&rs=AMzJL3mJkfPN1ABAF1jbdvz6BYs5GOe8Nw",
+   "seen": "2026-08-29T07:10:30.616953+00:00"
+  },
+  {
+   "videoId": "7zVIRtVNbJs",
+   "title": "K For Kabaradakkam (From \"Guruvayoorambala Nadayil\")",
+   "artist": "Ankit Menon, Asal Kolaar, Vinayak Sasikumar",
+   "album": "K For Kabaradakkam (From \"Guruvayoorambala Nadayil\")",
+   "thumbnail": "https://yt3.googleusercontent.com/_aW-uzqjepvtsoIP9Q2muNxManDCVRctQuvjiZm1-LApLNOBPiRTtMymsh_-c32YmlA5B3AijaiILncHLw=w120-h120-l90-rj",
+   "seen": "2026-08-29T07:10:30.616953+00:00"
+  },
+  {
+   "videoId": "80o35Bd5p-s",
+   "title": "Pistah",
+   "artist": "Rajesh Murugesan, Shabareesh Varma",
+   "album": "Neram (Original Motion Picture Soundtrack)",
+   "thumbnail": "https://yt3.googleusercontent.com/7-aa15avzXt6H0EgwGVU8fXjw7WaqzhR5T-j8KDBp5bYd4boLwrx3NwrwchFBcINt3u8d3FfI4V1YPIE=w120-h120-l90-rj",
+   "seen": "2026-08-29T07:10:30.616953+00:00"
   }
  ]
 }
