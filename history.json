@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-30T06:17:24.120970+00:00",
+ "updated": "2026-08-30T12:01:47.827125+00:00",
  "window_days": 7,
  "note": "Counts are built by diffing the full get_history() feed on each run, so tracks played between polls are captured. The feed lists each appearance once, so counts are a floor.",
  "plays": [
@@ -610,6 +610,126 @@
    "album": "Radhimaa [From \"Think Indie\"]",
    "thumbnail": "https://yt3.googleusercontent.com/YpHZO1DBcGPbgywaeckHbkkiI-b4OetQDJnQtCM--usqBrKljB-9uXax23i3hHI-PiTlyyHLBdYScSeGRQ=w120-h120-l90-rj",
    "seen": "2026-08-29T17:12:03.459207+00:00"
+  },
+  {
+   "videoId": "ANJL3xmgjgk",
+   "title": "Nai Jaana",
+   "artist": "Abhijeet Srivastava, Jai Dhir, Simran Choudhary, Ashish Bhatia",
+   "album": "Nai Jaana",
+   "thumbnail": "https://yt3.googleusercontent.com/ED1uEd-almNxp2NV-FteOAm2n-bXT1bf9f0xh7FbHq-B52B8LQhmGS9dPBM46fS0ZfB8up64v1JZGTbb=w120-h120-l90-rj",
+   "seen": "2026-08-30T12:01:47.827125+00:00"
+  },
+  {
+   "videoId": "7Zba_6wwOis",
+   "title": "Kol Aa",
+   "artist": "Aditya Rikhari",
+   "album": "Kol Aa",
+   "thumbnail": "https://yt3.googleusercontent.com/3dmVKyD-9rgN-kp7HmiuKrQcfbhbnwIrquNKczXSAt9OUdiXHBoxvL0qNvACOwYARKLyVqj9ItdhVk5R=w120-h120-l90-rj",
+   "seen": "2026-08-30T12:01:47.827125+00:00"
+  },
+  {
+   "videoId": "SBrs9-Xb2dk",
+   "title": "Aavan Jaavan (Movie: WAR 2)",
+   "artist": "Pritam, Arijit Singh, Nikhita Gandhi, Amitabh Bhattacharya",
+   "album": "WAR2",
+   "thumbnail": "https://yt3.googleusercontent.com/CpHtlQNWV3fThtKbZoKuhQ3x3u4BrLPi_3lNG4SXYcbDKK7_Cm9ohUakjbMvVXBMke0_1Yce6-4znJyASA=w120-h120-l90-rj",
+   "seen": "2026-08-30T12:01:47.827125+00:00"
+  },
+  {
+   "videoId": "3Tg-t3l8K4g",
+   "title": "Jee Nhi Lagda",
+   "artist": "IAMPRANN",
+   "album": "Jee Nhi Lagda",
+   "thumbnail": "https://yt3.googleusercontent.com/YanFe0AqWB99G_ehx-7PFfV95DnC39iLkyJpq5X7ZDW7XWLDzDRaltJJc5vVeCFlx5aBkHTDzrNHSnM=w120-h120-l90-rj",
+   "seen": "2026-08-30T12:01:47.827125+00:00"
+  },
+  {
+   "videoId": "XffsuRCvg2k",
+   "title": "Ishqa Ve",
+   "artist": "Zeeshan Ali",
+   "album": "Ishqa Ve",
+   "thumbnail": "https://yt3.googleusercontent.com/X4kTnSnizl6MSiCuDz5PxKYSaZjhbd2OuwuKAIojTFLyv3e9xVWKRiiToAAiDT95nkxbKUqHRamf2cGn=w120-h120-l90-rj",
+   "seen": "2026-08-30T12:01:47.827125+00:00"
+  },
+  {
+   "videoId": "wFmQvvM7IwQ",
+   "title": "Rang Saare",
+   "artist": "Saurav Pardal, Agaazz, REHAT",
+   "album": "Rang Saare",
+   "thumbnail": "https://yt3.googleusercontent.com/ZHEmU_iMRAPkdcKh9SA3Rgo2Vc4evnwREqRKBc2N8j6EEZfqf3sqXaavst2DKxl_hCDDkSC_WB1Ie0w=w120-h120-l90-rj",
+   "seen": "2026-08-30T12:01:47.827125+00:00"
+  },
+  {
+   "videoId": "-3KT1f7WZIo",
+   "title": "Afsos",
+   "artist": "Anuv Jain, AP Dhillon",
+   "album": "Afsos",
+   "thumbnail": "https://yt3.googleusercontent.com/RtrisEbMpw0qvN904DsYH4vOMyqHrwPoVlRM_tUcZL0OLqHs_IwPb-F6N_YlBqsqHGfCZdDL-o-99jsl=w120-h120-l90-rj",
+   "seen": "2026-08-30T12:01:47.827125+00:00"
+  },
+  {
+   "videoId": "GJ4vD3guc7U",
+   "title": "Jhol (Acoustic)",
+   "artist": "Maanu, Annural Khalid, Abdullah Siddiqui, Asfand",
+   "album": "Jhol (Acoustic)",
+   "thumbnail": "https://yt3.googleusercontent.com/Fh7MekieLqPoAu013p64icMBvT7mhOtr1HkKD5vPXl51hdzUp6rVCvAJbRC67Go4iKRTvDIU6uwyiO2NSA=w120-h120-l90-rj",
+   "seen": "2026-08-30T12:01:47.827125+00:00"
+  },
+  {
+   "videoId": "jNkylY5HycI",
+   "title": "No Love",
+   "artist": "Shubh",
+   "album": "No Love",
+   "thumbnail": "https://yt3.googleusercontent.com/G2ryS0OQ-BJ4g94A315NXGxX3jGU0rph_zeqjBbKGkvMYQ56uLDsWHYZpLwmJmdUPZPxCE56Dw5w1fdjkA=w120-h120-l90-rj",
+   "seen": "2026-08-30T12:01:47.827125+00:00"
+  },
+  {
+   "videoId": "VgqxDYFhSng",
+   "title": "LAAVAN",
+   "artist": "Jasmine Sandlas, Mofusion",
+   "album": "LAAVAN",
+   "thumbnail": "https://yt3.googleusercontent.com/AIwh8jnuCLlSJZql61xK1iKsPK6bvB7rr-5E3QmoompcJBp5Xf0uohtMbnNJJkpTg8-dr0bx4MvCYgIZlQ=w120-h120-l90-rj",
+   "seen": "2026-08-30T12:01:47.827125+00:00"
+  },
+  {
+   "videoId": "tqZ0cwNzNRg",
+   "title": "Pehli Nazar X Zaalima X Tainu Khabar Nahi",
+   "artist": "Sirchox",
+   "album": "Pehli Nazar X Zaalima X Tainu Khabar Nahi",
+   "thumbnail": "https://yt3.googleusercontent.com/4LF8djJ9oybQ9t6xE-U7BBpp615dMuIhQrr6Pacf8mKz98CjZdUy0NsPFZZGIlRos1bzqOtXnBSc5Dw=w120-h120-l90-rj",
+   "seen": "2026-08-30T12:01:47.827125+00:00"
+  },
+  {
+   "videoId": "-BzQVu8EuQ4",
+   "title": "9:45",
+   "artist": "Prabh Singh, Jay Trak, Rooh Sandhu",
+   "album": "9:45",
+   "thumbnail": "https://yt3.googleusercontent.com/JtmnFH93iGH3h2hy-xHiEh6pD2DfUr3SAaz6FOWnN2gjQqkqX0flEUzJ6jSNt9OFEDdLKXIZ4Bi_5HWd=w120-h120-l90-rj",
+   "seen": "2026-08-30T12:01:47.827125+00:00"
+  },
+  {
+   "videoId": "imP_a2FVGt8",
+   "title": "Jhol",
+   "artist": "Revel",
+   "album": "Jhol",
+   "thumbnail": "https://yt3.googleusercontent.com/uPWfEK6f1JciEAjo8QHt8Ai5r6bH7RDwRpMx9nXyh4i7ubNVWw9RpCivsUVUtaHAaXcON7uoa-p8iO4jLg=w120-h120-l90-rj",
+   "seen": "2026-08-30T12:01:47.827125+00:00"
+  },
+  {
+   "videoId": "3VxGCIuMq94",
+   "title": "Jaane Na",
+   "artist": "The PropheC, Outfly",
+   "album": "The Remedy",
+   "thumbnail": "https://yt3.googleusercontent.com/lbkZtmq2-WO82ot3kYxO4NFU5reMz1AFHeCSIlbJv05Dd5UbbwFrCb97zM3AzZ-u-gy063k_3HUXFfZ7=w120-h120-l90-rj",
+   "seen": "2026-08-30T12:01:47.827125+00:00"
+  },
+  {
+   "videoId": "moIXcDQB9-g",
+   "title": "Koi Si",
+   "artist": "Afsana Khan",
+   "album": "Koi Si",
+   "thumbnail": "https://yt3.googleusercontent.com/mhGN3eYqLvsO2uY8cxsqX9Y_79pQZ009C7TlQll5pV4zclENS1tYbpAsgdyvLu3htvikGnCs4eKgsVkg=w120-h120-l90-rj",
+   "seen": "2026-08-30T12:01:47.827125+00:00"
   }
  ]
 }
