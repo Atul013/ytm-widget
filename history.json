@@ -1,40 +1,8 @@
 {
- "updated": "2026-08-30T00:40:36.743451+00:00",
+ "updated": "2026-08-30T06:17:24.120970+00:00",
  "window_days": 7,
  "note": "Counts are built by diffing the full get_history() feed on each run, so tracks played between polls are captured. The feed lists each appearance once, so counts are a floor.",
  "plays": [
-  {
-   "videoId": "3v4CmXTPGLE",
-   "title": "THUNAI VARUVEN",
-   "artist": "Jasleen Royal, Sanjith Hegde",
-   "album": "THUNAI VARUVEN",
-   "thumbnail": "https://yt3.googleusercontent.com/ZjthY1g1l3_6kuCoDnrjTkBKdzZ4EuVI5sQqL8UW0Y2zPfRpU24Xp6dMXXlNP1tH2_3LeeFoTiB3_sCJ=w120-h120-l90-rj",
-   "seen": "2026-08-23T03:50:38.752397+00:00"
-  },
-  {
-   "videoId": "E2RGyGeM2A4",
-   "title": "Warrior",
-   "artist": "lladywolf",
-   "album": "Warrior",
-   "thumbnail": "https://yt3.googleusercontent.com/wm6kmHPlM59J4x48fpESSsXUZChh9g32ws_dtIKwq-PfrsNUsM9jiVqRwXeYugyybX1FXHzs6likiXx0=w120-h120-l90-rj",
-   "seen": "2026-08-23T03:50:38.752397+00:00"
-  },
-  {
-   "videoId": "G0tmfgfTzgg",
-   "title": "I Don't Care",
-   "artist": "Ash Reed Music",
-   "album": "GraveSoul",
-   "thumbnail": "https://yt3.googleusercontent.com/0eM6ip9Z8P2II58FOlWR4WQ_spUAtEPBfYJhZoDOSQZ8bGUzEXMBGLkMHxwXkdOXcc6YffjxjqtQHJkp=w120-h120-l90-rj",
-   "seen": "2026-08-23T03:50:38.752397+00:00"
-  },
-  {
-   "videoId": "PEnmMz3EGVc",
-   "title": "I Will Rise Again",
-   "artist": "Orkestral Studio",
-   "album": "I Will Rise Again",
-   "thumbnail": "https://yt3.googleusercontent.com/VRptzYcI_c760ipSTxGtgr5T9CkzEZADIZrhNu8KQLo1T49LPlN1sxX28rC5CRy94E7AfVk7vrOh9X5L=w120-h120-l90-rj",
-   "seen": "2026-08-23T03:50:38.752397+00:00"
-  },
   {
    "videoId": "0jUsYGOuH0k",
    "title": "Standing",
