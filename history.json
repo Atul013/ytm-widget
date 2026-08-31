@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-31T14:03:48.942159+00:00",
+ "updated": "2026-08-31T20:10:56.573095+00:00",
  "window_days": 7,
  "note": "Counts are built by diffing the full get_history() feed on each run, so tracks played between polls are captured. The feed lists each appearance once, so counts are a floor.",
  "plays": [
@@ -642,6 +642,14 @@
    "album": "Koi Si",
    "thumbnail": "https://yt3.googleusercontent.com/mhGN3eYqLvsO2uY8cxsqX9Y_79pQZ009C7TlQll5pV4zclENS1tYbpAsgdyvLu3htvikGnCs4eKgsVkg=w120-h120-l90-rj",
    "seen": "2026-08-30T12:01:47.827125+00:00"
+  },
+  {
+   "videoId": "3igIAOJlJ2s",
+   "title": "Asalayavale (From \"Khalifa\")",
+   "artist": "Jakes Bejoy, Sid Sriram, Mohammed Maqbool Mansoor, Muthu",
+   "album": "Asalayavale (From \"Khalifa\")",
+   "thumbnail": "https://yt3.googleusercontent.com/t3GXDvOjTppLsJ4pbHUIi-VhALz6I4tvMg7S0ipo1Lu1Wvf1PK79jLc3cbyGYaBgybU5v2VTPZM7TPWT=w120-h120-l90-rj",
+   "seen": "2026-08-31T20:10:56.573095+00:00"
   }
  ]
 }
