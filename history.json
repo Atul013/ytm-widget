@@ -1,16 +1,8 @@
 {
- "updated": "2026-09-01T14:12:08.909498+00:00",
+ "updated": "2026-09-01T17:51:41.135635+00:00",
  "window_days": 7,
  "note": "Counts are built by diffing the full get_history() feed on each run, so tracks played between polls are captured. The feed lists each appearance once, so counts are a floor.",
  "plays": [
-  {
-   "videoId": "7bHLX6oKfbA",
-   "title": "Manpaatha",
-   "artist": "Shaan Rahman",
-   "album": "Mili (Original Motion Picture Soundtrack)",
-   "thumbnail": "https://yt3.googleusercontent.com/WRajCo-Tjl3VU7HcpFeoy58joosBnB-B1iYeF8REDCaPxF_ymfgu1o8Y_gjYSz9cdPrpl4pmDrrg749v=w120-h120-l90-rj",
-   "seen": "2026-08-25T15:09:19.635264+00:00"
-  },
   {
    "videoId": "ppldODPhZYM",
    "title": "Kamini",
@@ -730,6 +722,14 @@
    "album": "Freaks Like Us",
    "thumbnail": "https://yt3.googleusercontent.com/a0ay4OYW3B59I6v2qZHhpLfpgE_3JQpIYmQ9_NH8rRGXTTKICRKfQs9bZakypW8nCx5ha8Lqetas6BiAIQ=w120-h120-l90-rj",
    "seen": "2026-09-01T14:12:08.909498+00:00"
+  },
+  {
+   "videoId": "rowLbZTTpvI",
+   "title": "UNSECRET X NILKA - LAST SURVIVIOR [OFFICIAL AUDIO]",
+   "artist": "UNSECRET, 446K views",
+   "album": null,
+   "thumbnail": "https://i.ytimg.com/vi/rowLbZTTpvI/hqdefault.jpg?sqp=-oaymwEWCJADEOEBIAQqCggAEOADGC0guwJIWg&rs=AMzJL3kS0mFeQOXnxrtwb28av-c6DIfU3w",
+   "seen": "2026-09-01T17:51:41.135635+00:00"
   }
  ]
 }
