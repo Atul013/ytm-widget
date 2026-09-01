@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-01T09:19:04.657025+00:00",
+ "updated": "2026-09-01T14:12:08.909498+00:00",
  "window_days": 7,
  "note": "Counts are built by diffing the full get_history() feed on each run, so tracks played between polls are captured. The feed lists each appearance once, so counts are a floor.",
  "plays": [
@@ -722,6 +722,14 @@
    "album": null,
    "thumbnail": "https://i.ytimg.com/vi/mKjMOO_8wXs/hqdefault.jpg?sqp=-oaymwEWCJADEOEBIAQqCggAEOADGC0guwJIWg&rs=AMzJL3ll3ahILfYh4n5pQ33MosYl3tP6fQ",
    "seen": "2026-09-01T03:57:10.787844+00:00"
+  },
+  {
+   "videoId": "Op8Ujg6fbE4",
+   "title": "Freaks Like Us",
+   "artist": "Sleeping Wolf",
+   "album": "Freaks Like Us",
+   "thumbnail": "https://yt3.googleusercontent.com/a0ay4OYW3B59I6v2qZHhpLfpgE_3JQpIYmQ9_NH8rRGXTTKICRKfQs9bZakypW8nCx5ha8Lqetas6BiAIQ=w120-h120-l90-rj",
+   "seen": "2026-09-01T14:12:08.909498+00:00"
   }
  ]
 }
