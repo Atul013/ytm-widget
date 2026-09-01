@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-31T23:54:39.793955+00:00",
+ "updated": "2026-09-01T03:57:10.787844+00:00",
  "window_days": 7,
  "note": "Counts are built by diffing the full get_history() feed on each run, so tracks played between polls are captured. The feed lists each appearance once, so counts are a floor.",
  "plays": [
@@ -650,6 +650,78 @@
    "album": "Asalayavale (From \"Khalifa\")",
    "thumbnail": "https://yt3.googleusercontent.com/t3GXDvOjTppLsJ4pbHUIi-VhALz6I4tvMg7S0ipo1Lu1Wvf1PK79jLc3cbyGYaBgybU5v2VTPZM7TPWT=w120-h120-l90-rj",
    "seen": "2026-08-31T20:10:56.573095+00:00"
+  },
+  {
+   "videoId": "u_9KqtvNjFo",
+   "title": "PATAKHA GUDDI",
+   "artist": "Jyoti Nooran, Sultana",
+   "album": "Highway (Original Motion Picture Soundtrack)",
+   "thumbnail": "https://yt3.googleusercontent.com/SiZiT6QJn3n1tcWd3DVlY9dU8fDTRauuMrkaQpAh8UBAUzf7OK8flE1NzlZHNRCogerHcubb5qbQJhA=w120-h120-l90-rj",
+   "seen": "2026-09-01T03:57:10.787844+00:00"
+  },
+  {
+   "videoId": "xdU_pks-NLk",
+   "title": "Kokki",
+   "artist": "Anirudh Ravichander, Sooraj Santhosh",
+   "album": "Coolie (Original Motion Picture Soundtrack)",
+   "thumbnail": "https://yt3.googleusercontent.com/rEP8DGXzEu4hQlgTKlKMpJAVH4_hKne4nGq-G-x_w13k--GA2co00q_qNuJuKU_qj6p7GgXWadTdnA8g=w120-h120-l90-rj",
+   "seen": "2026-09-01T03:57:10.787844+00:00"
+  },
+  {
+   "videoId": "q33pkF_ZuyE",
+   "title": "Baiana 2022",
+   "artist": "Ladji Mouflet",
+   "album": "Baiana 2022",
+   "thumbnail": "https://yt3.googleusercontent.com/RZL0rlbtSC2u8cys1KUIf-D8hUS1dWOHW1vGRiAXWUZj0na2Tw7AfEfALQYQyR_82OYQc74iBTZDCXc=w120-h120-l90-rj",
+   "seen": "2026-09-01T03:57:10.787844+00:00"
+  },
+  {
+   "videoId": "Mcf43KB9BI0",
+   "title": "Days Like This",
+   "artist": "Late Night Thoughts",
+   "album": "Days Like This",
+   "thumbnail": "https://yt3.googleusercontent.com/BTY3i_1-_vHr_dtPJV9RZQXQHqqrqMhO-rRSm-_bQi1hnI7_B9AhoiwQKheviEPkDV2gb8oMkUgSSFg=w120-h120-l90-rj",
+   "seen": "2026-09-01T03:57:10.787844+00:00"
+  },
+  {
+   "videoId": "vmf5mExuuHo",
+   "title": "Drona (Theme Song)",
+   "artist": "Nitinraj, Sreekumar",
+   "album": "Drona",
+   "thumbnail": "https://yt3.googleusercontent.com/8z66JOqlkOLciznT0CKm7vxd7qPjfk8YwDteX-JaezQFWQs7g1lpJtCrsSq3YHvxZuAsh47vVmK9ul4=w120-h120-l90-rj",
+   "seen": "2026-09-01T03:57:10.787844+00:00"
+  },
+  {
+   "videoId": "uZg2rlpZD0Q",
+   "title": "Maniya (From \"ARM\")",
+   "artist": "Dhibu Ninan Thomas, Aravind Srinivas, Manu Manjith",
+   "album": "Maniya (From \"ARM\")",
+   "thumbnail": "https://yt3.googleusercontent.com/sTGMXIyLh4UKiMseq8aI7sW4X2d1OButXjjzQQtSpp-Xy2f9EvUGVf5IC0liQEl4fNGigZY2j07G5sHO=w120-h120-l90-rj",
+   "seen": "2026-09-01T03:57:10.787844+00:00"
+  },
+  {
+   "videoId": "is43ix7XQOQ",
+   "title": "Thaka Thaka",
+   "artist": "Rajesh Murugesan, Shabareesh Varma",
+   "album": "Neram (Original Motion Picture Soundtrack)",
+   "thumbnail": "https://yt3.googleusercontent.com/7-aa15avzXt6H0EgwGVU8fXjw7WaqzhR5T-j8KDBp5bYd4boLwrx3NwrwchFBcINt3u8d3FfI4V1YPIE=w120-h120-l90-rj",
+   "seen": "2026-09-01T03:57:10.787844+00:00"
+  },
+  {
+   "videoId": "nLeVrwElLnA",
+   "title": "The Banner Will Burn",
+   "artist": "MightyW Project",
+   "album": "Steel for the Morning, Flame for the Night",
+   "thumbnail": "https://yt3.googleusercontent.com/727Yb3Ix7aTFkmi_E26CegK6ql1PRNGLnXkXLuENIZWdo8WNg2gQ6I822brJfCaE1SE5m8RB2VSMJPPpEQ=w120-h120-l90-rj",
+   "seen": "2026-09-01T03:57:10.787844+00:00"
+  },
+  {
+   "videoId": "mKjMOO_8wXs",
+   "title": "Thumbi vaa ( remix ) new version 2026 #thumbivaaremix #malayalamremix #thumbivaathumbakudathin",
+   "artist": "visual magic, 225K views",
+   "album": null,
+   "thumbnail": "https://i.ytimg.com/vi/mKjMOO_8wXs/hqdefault.jpg?sqp=-oaymwEWCJADEOEBIAQqCggAEOADGC0guwJIWg&rs=AMzJL3ll3ahILfYh4n5pQ33MosYl3tP6fQ",
+   "seen": "2026-09-01T03:57:10.787844+00:00"
   }
  ]
 }
