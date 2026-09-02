@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-02T00:51:33.463117+00:00",
+ "updated": "2026-09-02T05:29:36.876650+00:00",
  "window_days": 7,
  "note": "Counts are built by diffing the full get_history() feed on each run, so tracks played between polls are captured. The feed lists each appearance once, so counts are a floor.",
  "plays": [
@@ -730,6 +730,70 @@
    "album": null,
    "thumbnail": "https://i.ytimg.com/vi/rowLbZTTpvI/hqdefault.jpg?sqp=-oaymwEWCJADEOEBIAQqCggAEOADGC0guwJIWg&rs=AMzJL3kS0mFeQOXnxrtwb28av-c6DIfU3w",
    "seen": "2026-09-01T17:51:41.135635+00:00"
+  },
+  {
+   "videoId": "__OAjRBXnU0",
+   "title": "Eyes of a Champion",
+   "artist": "Kairo, Easy Mccoy, City Wolf",
+   "album": "When Worlds Collide, Vol. 1",
+   "thumbnail": "https://yt3.googleusercontent.com/og39NWB3EtxXRgaZt5nYywqJio26UP9VYG_KnN0e5UGxjRTUka17kConlf_j9q_O4Rd0GwYyWA2hUqBixw=w120-h120-l90-rj",
+   "seen": "2026-09-02T05:29:36.876650+00:00"
+  },
+  {
+   "videoId": "k0PneaOKCh4",
+   "title": "Back To Then (feat. Luma)",
+   "artist": "Klaxx, Luma",
+   "album": "Back To Then (ft. Luma)",
+   "thumbnail": "https://yt3.googleusercontent.com/zJ2X2RIwto5dGC83l1coJphEbJhvArldUXoqEPyHo1OkoKg9GZq7i9DQOvui6H73ZkNLFOT91idA3BBvRQ=w120-h120-l90-rj",
+   "seen": "2026-09-02T05:29:36.876650+00:00"
+  },
+  {
+   "videoId": "qMcrJcWdMEo",
+   "title": "Even If It Hurts",
+   "artist": "Sam Tinnesz",
+   "album": "Even If It Hurts",
+   "thumbnail": "https://yt3.googleusercontent.com/D3-V1UapZBsGc9rfnVgPMf8BsleV0fAHWJfJG7Rm2xkdW7OiPXfmn0Hq5jCU8pom63ew8VEAVRN9wahk=w120-h120-l90-rj",
+   "seen": "2026-09-02T05:29:36.876650+00:00"
+  },
+  {
+   "videoId": "2PNN5TcfrkE",
+   "title": "Fight Till the End",
+   "artist": "Shangrii-La",
+   "album": "Face the Fire",
+   "thumbnail": "https://yt3.googleusercontent.com/BxBnXCFOB8e9uKY-gkWFZ2u4VBi_VZyo38mtnwJ3gkvNhbziG5YpUG18RVnjhOKEp1gnuKpIcgKd17A=w120-h120-l90-rj",
+   "seen": "2026-09-02T05:29:36.876650+00:00"
+  },
+  {
+   "videoId": "h_g9XJpSV-g",
+   "title": "Get Ready For The Future",
+   "artist": "Silverberg, Anna Graceman",
+   "album": "Get Ready For The Future",
+   "thumbnail": "https://yt3.googleusercontent.com/HB1HiEbByKODlVR_pcDKs0kcJB8TnCmVddxhKF2vwcoPYiLxdWC1M4C7kXsFMh1o2BC1hmEWmz9_iYQ=w120-h120-l90-rj",
+   "seen": "2026-09-02T05:29:36.876650+00:00"
+  },
+  {
+   "videoId": "JYIh1rg7nQc",
+   "title": "Heroes Never Die (feat. KRIGAR\u00c8)",
+   "artist": "UNSECRET",
+   "album": "Heroes Never Die",
+   "thumbnail": "https://yt3.googleusercontent.com/rMch9_4ujyLI6G668xvq-VSj906WKS_qkcwA9vRI_N7GtWJbqU7wl2MrOh6w6ioY3V7oZfZEZjT3QZs=w120-h120-l90-rj",
+   "seen": "2026-09-02T05:29:36.876650+00:00"
+  },
+  {
+   "videoId": "knA_zZqUE5Q",
+   "title": "Undefeated",
+   "artist": "All Good Things",
+   "album": "A Hope In Hell",
+   "thumbnail": "https://yt3.googleusercontent.com/2qnBVzc79esnK4sDeFa3oRdbBbcqr_odMkAsKIHMnQtzblh_0T5K2EZ2NVXbTcmDy6J2cgPl5mTJZ0j7wg=w120-h120-l90-rj",
+   "seen": "2026-09-02T05:29:36.876650+00:00"
+  },
+  {
+   "videoId": "3v4CmXTPGLE",
+   "title": "THUNAI VARUVEN",
+   "artist": "Jasleen Royal, Sanjith Hegde",
+   "album": "THUNAI VARUVEN",
+   "thumbnail": "https://yt3.googleusercontent.com/ZjthY1g1l3_6kuCoDnrjTkBKdzZ4EuVI5sQqL8UW0Y2zPfRpU24Xp6dMXXlNP1tH2_3LeeFoTiB3_sCJ=w120-h120-l90-rj",
+   "seen": "2026-09-02T05:29:36.876650+00:00"
   }
  ]
 }
