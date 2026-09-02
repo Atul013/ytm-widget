@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-02T17:56:03.837617+00:00",
+ "updated": "2026-09-02T20:44:25.795021+00:00",
  "window_days": 7,
  "note": "Counts are built by diffing the full get_history() feed on each run, so tracks played between polls are captured. The feed lists each appearance once, so counts are a floor.",
  "plays": [
@@ -818,6 +818,14 @@
    "album": "Haaniya",
    "thumbnail": "https://yt3.googleusercontent.com/JnLhV3qZDoPDiL6RE26K9vSIkYeCWA_UhgznQEzrDi6frjNMBZvoLYVY1_z1A3aCMKzSoVeWe_sJe1Y=w120-h120-l90-rj",
    "seen": "2026-09-02T17:56:03.837617+00:00"
+  },
+  {
+   "videoId": "zG31xK30joQ",
+   "title": "Paani",
+   "artist": "Aden, Amber",
+   "album": "(Un)broken",
+   "thumbnail": "https://yt3.googleusercontent.com/0hrqm1kQuFEBL8t0PUFoxK2MErOOtf5w_2TCXXp6-vqjBB2IlooX_kfBjMOxJKYZ3XFdXbHNGn1cpfGR=w120-h120-l90-rj",
+   "seen": "2026-09-02T20:44:25.795021+00:00"
   }
  ]
 }
