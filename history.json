@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-02T14:08:29.886587+00:00",
+ "updated": "2026-09-02T17:56:03.837617+00:00",
  "window_days": 7,
  "note": "Counts are built by diffing the full get_history() feed on each run, so tracks played between polls are captured. The feed lists each appearance once, so counts are a floor.",
  "plays": [
@@ -802,6 +802,22 @@
    "album": "Angu Vaana Konilu (From \"ARM\")",
    "thumbnail": "https://yt3.googleusercontent.com/Y4Ud_A5wBH9QEMdIws233FywE8rYjstI_9HYlS8-aqWwcFzGPYPxIShnNgqQIJzO0VAaerBHSc9Q_jZS=w120-h120-l90-rj",
    "seen": "2026-09-02T14:08:29.886587+00:00"
+  },
+  {
+   "videoId": "16IIpT7bP-k",
+   "title": "Don't Go",
+   "artist": "JAI DHIR, Yoki",
+   "album": "Don't Go",
+   "thumbnail": "https://yt3.googleusercontent.com/8cSzkWtpI44nwD8jDdbELV3nIy7JnWE7mB8mWvyom2LBsILK5b6JCWM0rEXIrIqCWq-CqaDA7g470JwH=w120-h120-l90-rj",
+   "seen": "2026-09-02T17:56:03.837617+00:00"
+  },
+  {
+   "videoId": "njgAvuFWw9E",
+   "title": "Sohne Chehre",
+   "artist": "Rumii, Jagte, Saahil",
+   "album": "Haaniya",
+   "thumbnail": "https://yt3.googleusercontent.com/JnLhV3qZDoPDiL6RE26K9vSIkYeCWA_UhgznQEzrDi6frjNMBZvoLYVY1_z1A3aCMKzSoVeWe_sJe1Y=w120-h120-l90-rj",
+   "seen": "2026-09-02T17:56:03.837617+00:00"
   }
  ]
 }
