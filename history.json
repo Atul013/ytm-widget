@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-03T01:10:46.789157+00:00",
+ "updated": "2026-09-03T05:54:11.608815+00:00",
  "window_days": 7,
  "note": "Counts are built by diffing the full get_history() feed on each run, so tracks played between polls are captured. The feed lists each appearance once, so counts are a floor.",
  "plays": [
@@ -826,6 +826,78 @@
    "album": "(Un)broken",
    "thumbnail": "https://yt3.googleusercontent.com/0hrqm1kQuFEBL8t0PUFoxK2MErOOtf5w_2TCXXp6-vqjBB2IlooX_kfBjMOxJKYZ3XFdXbHNGn1cpfGR=w120-h120-l90-rj",
    "seen": "2026-09-02T20:44:25.795021+00:00"
+  },
+  {
+   "videoId": "7FXyc11C1qM",
+   "title": "Fish Rock",
+   "artist": "Thaikkudam Bridge",
+   "album": "Fish Rock",
+   "thumbnail": "https://yt3.googleusercontent.com/kuT4Sdh1uGamiupkyDUb4XUmD87or6NleBPeqzqbeSyjGe9e1Na5eg1ciKEqEY0f4jKeHX7mWijq9MVicQ=w120-h120-l90-rj",
+   "seen": "2026-09-03T05:54:11.608815+00:00"
+  },
+  {
+   "videoId": "GtIbY0dUBgI",
+   "title": "One",
+   "artist": "Thaikkudam Bridge, Siddharth Menon, Dhanya Suresh Menon",
+   "album": "Navarasam",
+   "thumbnail": "https://yt3.googleusercontent.com/YfxRbaueXVA1DowZFOZRbqlkswejovaA_xJh2W367QiY16ABW6yiH1pT4nKEMfVIinmUY33cNz_jefht0g=w120-h120-l90-rj",
+   "seen": "2026-09-03T05:54:11.608815+00:00"
+  },
+  {
+   "videoId": "VaMJvJtSwdg",
+   "title": "All the King's Men",
+   "artist": "The Rigs",
+   "album": "Gray",
+   "thumbnail": "https://yt3.googleusercontent.com/ouNbQSh6x3tXoMW7aIWGBHLodzDh9gdUJpoyf2PKCgMXro3KeP4crvKitfO6Q_IcMOB9CXTnOztILGsT=w120-h120-l90-rj",
+   "seen": "2026-09-03T05:54:11.608815+00:00"
+  },
+  {
+   "videoId": "qeDDw3HG8do",
+   "title": "Diljit x Ed Sheeran (Live)",
+   "artist": "OG Artist",
+   "album": "Diljit x Ed Sheeran (Live)",
+   "thumbnail": "https://yt3.googleusercontent.com/IXS9ySIfUv50gHDFuVfxgnnLyd9VleEqPFHS9PHO4WaJeDgT2IbVu9lOcRiprcRKbFMIos3YGn9fJ-du=w120-h120-l90-rj",
+   "seen": "2026-09-03T05:54:11.608815+00:00"
+  },
+  {
+   "videoId": "-MxTcyDfKBc",
+   "title": "Airplanes (feat. Hayley Williams of Paramore)",
+   "artist": "B.o.B",
+   "album": "B.o.B Presents: The Adventures of Bobby Ray",
+   "thumbnail": "https://yt3.googleusercontent.com/OF3zXElIGBlvMsRG8WdXj-FIDUjyvzC5inqo3ayXOOcgzar62RZIgKty7_BTWTxHzq1unD2_7g979sRP=w120-h120-s-l90-rj",
+   "seen": "2026-09-03T05:54:11.608815+00:00"
+  },
+  {
+   "videoId": "xxqEzxSw8Vs",
+   "title": "Ulagam Oruvanukka",
+   "artist": "Ananthu, Santhosh Narayanan, Gaana Bala, Roshan Jamrock",
+   "album": "Kabali",
+   "thumbnail": "https://yt3.googleusercontent.com/KkqaAdHJflgfaVWDCdlsShtwXb_ug8H16VhCr_3hFx09yTfe8tA_hu_BrqGtiJIZlUymeglLpkYYRx6yCg=w120-h120-l90-rj",
+   "seen": "2026-09-03T05:54:11.608815+00:00"
+  },
+  {
+   "videoId": "me4lu_vyfbg",
+   "title": "Adaavadi (From \"Love Insurance Kompany\")",
+   "artist": "Anirudh Ravichander, Mathichiyam Bala, Rokesh, Heisenberg",
+   "album": "Adaavadi (From \"Love Insurance Kompany\")",
+   "thumbnail": "https://yt3.googleusercontent.com/ctpAa5fa9SNn7F41USTE37PzB59PygJg3hGhVKgsuPnoQYdB2JyFWfOn4TU18RlNMR4uHYv9bGyQChAX=w120-h120-l90-rj",
+   "seen": "2026-09-03T05:54:11.608815+00:00"
+  },
+  {
+   "videoId": "YpT45ya3ExU",
+   "title": "Let 'Em Talk",
+   "artist": "Brodha V",
+   "album": "Let 'Em Talk",
+   "thumbnail": "https://yt3.googleusercontent.com/GcMhOJ0RAbwKLR4iFvfuR7xkUf_omDFzZa3NsX6lMhDDFhBpoBkMhhmTdz1ruhIqQGJyPZ2aO0ojuaCpJw=w120-h120-l90-rj",
+   "seen": "2026-09-03T05:54:11.608815+00:00"
+  },
+  {
+   "videoId": "95e2euu9Q0w",
+   "title": "Varavaa Varavaa",
+   "artist": "Anirudh Ravichander, Vignesh Shivan",
+   "album": "Naanum Rowdy Dhaan (Original Motion Picture Soundtrack)",
+   "thumbnail": "https://yt3.googleusercontent.com/0NfKBHSaQFkKDxfsk2rSelMut2TZw1Ymr5-laecmSWB84ByTzUn5eKgmlQ36frsLB5XHv7j0HO6hiHB_=w120-h120-l90-rj",
+   "seen": "2026-09-03T05:54:11.608815+00:00"
   }
  ]
 }
