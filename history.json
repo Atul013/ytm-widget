@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-04T18:51:43.372949+00:00",
+ "updated": "2026-09-04T21:17:10.471062+00:00",
  "window_days": 7,
  "note": "Counts are built by diffing the full get_history() feed on each run, so tracks played between polls are captured. The feed lists each appearance once, so counts are a floor.",
  "plays": [
