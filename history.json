@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-04T06:31:05.659578+00:00",
+ "updated": "2026-09-04T11:43:16.432243+00:00",
  "window_days": 7,
  "note": "Counts are built by diffing the full get_history() feed on each run, so tracks played between polls are captured. The feed lists each appearance once, so counts are a floor.",
  "plays": [
@@ -906,6 +906,22 @@
    "album": "Idhuvum Kadandhu Pogum (The Healing Song) (From \"Netrikann\")",
    "thumbnail": "https://yt3.googleusercontent.com/G6OO-sA4BG98S0dl1xCZI6-xWeMA0AXZgYDCHDSKpZCF9v-Hj4Y79PJ0yfQPjojTVtU6VUggtXvjm1vY=w120-h120-l90-rj",
    "seen": "2026-09-04T06:31:05.659578+00:00"
+  },
+  {
+   "videoId": "QlSzHUmiVLo",
+   "title": "Khwaab",
+   "artist": "Anumita Nadesan",
+   "album": "Khwaab",
+   "thumbnail": "https://yt3.googleusercontent.com/TaqPOcgEzycD2WmD5M1R8G1XK-wrxi-95cRyP8lE8t9bNADFPDNSgFwhzW93R1z34G7B10CqLzO99n8q-w=w120-h120-l90-rj",
+   "seen": "2026-09-04T11:43:16.432243+00:00"
+  },
+  {
+   "videoId": "fdNdxUN11Es",
+   "title": "Kannazhaga (The Kiss of Love)",
+   "artist": "Anirudh Ravichander, Dhanush, Shruti Haasan",
+   "album": "3 (Original Motion Picture Soundtrack)",
+   "thumbnail": "https://yt3.googleusercontent.com/v0ALFsPVPrQTsa9owzgbrtkcijwN_r48NRND0cClHAaGe2W4f5wty-kUa4-0Yk0ZqOcCnyX-TO_TAYU=w120-h120-l90-rj",
+   "seen": "2026-09-04T11:43:16.432243+00:00"
   }
  ]
 }
