@@ -1,32 +1,8 @@
 {
- "updated": "2026-09-04T01:21:09.727468+00:00",
+ "updated": "2026-09-04T06:31:05.659578+00:00",
  "window_days": 7,
  "note": "Counts are built by diffing the full get_history() feed on each run, so tracks played between polls are captured. The feed lists each appearance once, so counts are a floor.",
  "plays": [
-  {
-   "videoId": "ppldODPhZYM",
-   "title": "Kamini",
-   "artist": "KS Harisankar",
-   "album": "Anugraheethan Antony",
-   "thumbnail": "https://yt3.googleusercontent.com/769jrSNRcntrnaZ036Pf5yc0hqedfkaIoDxIDPqspNdWETaU90HY_3f8TU87t8hywdlC9Im5DhlEB-oO2A=w120-h120-l90-rj",
-   "seen": "2026-08-28T05:28:30.232077+00:00"
-  },
-  {
-   "videoId": "OkBPy5WbAzk",
-   "title": "Uyire",
-   "artist": "Ankit Menon, Sid Sriram, Vinayak Sasikumar",
-   "album": "Gauthamante Radham",
-   "thumbnail": "https://yt3.googleusercontent.com/fzIHDJdV2lesDuLTXXdaJIEt0xukGRM2WHo6Mx6LGW32Hw0ipV_R8fRXCWPoMThJ_GAGD-qavP2IrHvn=w120-h120-l90-rj",
-   "seen": "2026-08-28T05:28:30.232077+00:00"
-  },
-  {
-   "videoId": "eUDTNL0xick",
-   "title": "Chalte Chalte - Rishi Roy",
-   "artist": "Rishi Roy, 2M views",
-   "album": null,
-   "thumbnail": "https://i.ytimg.com/vi/eUDTNL0xick/hqdefault.jpg?sqp=-oaymwEWCJADEOEBIAQqCggAEOADGC0guwJIWg&rs=AMzJL3nQxhLU3kjCjrMtiHyHX6K5ggRrBg",
-   "seen": "2026-08-28T05:31:32.188293+00:00"
-  },
   {
    "videoId": "EV5982RVl6w",
    "title": "Tumhare Hi Rahenge Hum (From \"Stree 2\")",
@@ -898,6 +874,38 @@
    "album": "Naanum Rowdy Dhaan (Original Motion Picture Soundtrack)",
    "thumbnail": "https://yt3.googleusercontent.com/0NfKBHSaQFkKDxfsk2rSelMut2TZw1Ymr5-laecmSWB84ByTzUn5eKgmlQ36frsLB5XHv7j0HO6hiHB_=w120-h120-l90-rj",
    "seen": "2026-09-03T05:54:11.608815+00:00"
+  },
+  {
+   "videoId": "reBEkYrqMhA",
+   "title": "Gerua",
+   "artist": "Pritam, Arijit Singh, Antara Mitra",
+   "album": "Dilwale (Original Motion Picture Soundtrack)",
+   "thumbnail": "https://yt3.googleusercontent.com/7FxbxKIussM0Pu0YJa9eXy2eN9-f8g82NFoKpeepDQavqn_Auja9TzR_9b1wgMrfHQrGDLOtQymO-PfZ=w120-h120-l90-rj",
+   "seen": "2026-09-04T06:31:05.659578+00:00"
+  },
+  {
+   "videoId": "FAYx9JbtHRc",
+   "title": "Pookkalae Sattru Oyivedungal",
+   "artist": "A.R. Rahman, Haricharan, Shreya Ghoshal, Madhan Karky",
+   "album": "I (Original Motion Picture Soundtrack)",
+   "thumbnail": "https://yt3.googleusercontent.com/_7c00DYlrjLSEH-e4jM3LA_UU5gru1V6P5_6XLjR30Nuw9QoNqMKccCiwLh_E0qNGn96Xh2yCg-V4-eH=w120-h120-l90-rj",
+   "seen": "2026-09-04T06:31:05.659578+00:00"
+  },
+  {
+   "videoId": "nUugKaA1MYs",
+   "title": "Pularaan Neram",
+   "artist": "Bijibal, Sooraj Santhosh",
+   "album": "Android Kunjappan Version 5.25",
+   "thumbnail": "https://yt3.googleusercontent.com/76gJfQv67tgRpOBVxP6daqLs-CSDX_nLucc2Fv7_WWlH1y2v9pvyx4o6GhP9fL0hWiKS_YNKi203ThCcFA=w120-h120-l90-rj",
+   "seen": "2026-09-04T06:31:05.659578+00:00"
+  },
+  {
+   "videoId": "jxPRbGlXkC0",
+   "title": "Idhuvum Kadandhu Pogum (The Healing Song) (From \"Netrikann\")",
+   "artist": "Sid Sriram",
+   "album": "Idhuvum Kadandhu Pogum (The Healing Song) (From \"Netrikann\")",
+   "thumbnail": "https://yt3.googleusercontent.com/G6OO-sA4BG98S0dl1xCZI6-xWeMA0AXZgYDCHDSKpZCF9v-Hj4Y79PJ0yfQPjojTVtU6VUggtXvjm1vY=w120-h120-l90-rj",
+   "seen": "2026-09-04T06:31:05.659578+00:00"
   }
  ]
 }
