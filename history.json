@@ -1,24 +1,8 @@
 {
- "updated": "2026-09-05T16:14:17.936948+00:00",
+ "updated": "2026-09-05T18:22:44.473953+00:00",
  "window_days": 7,
  "note": "Counts are built by diffing the full get_history() feed on each run, so tracks played between polls are captured. The feed lists each appearance once, so counts are a floor.",
  "plays": [
-  {
-   "videoId": "D06jBxF4btE",
-   "title": "Aaranne Aaranne",
-   "artist": "Job Kurian, Rita",
-   "album": "Urumi",
-   "thumbnail": "https://yt3.googleusercontent.com/5v8_K5_tC8QSGtTk5ETJmGX-wsyySi6eLNaY0j34ODOtnjcEMsOaT61PDj1WD9bMfQtbVBpwpzTR_BI=w120-h120-l90-rj",
-   "seen": "2026-08-29T17:12:03.459207+00:00"
-  },
-  {
-   "videoId": "BmRX2g6-iQI",
-   "title": "Radhimaa [From \"Think Indie\"] (feat. Sai Smriti)",
-   "artist": "Sai Abhyankkar, Nargis Teji, Asma Teji, and Vivek",
-   "album": "Radhimaa [From \"Think Indie\"]",
-   "thumbnail": "https://yt3.googleusercontent.com/YpHZO1DBcGPbgywaeckHbkkiI-b4OetQDJnQtCM--usqBrKljB-9uXax23i3hHI-PiTlyyHLBdYScSeGRQ=w120-h120-l90-rj",
-   "seen": "2026-08-29T17:12:03.459207+00:00"
-  },
   {
    "videoId": "ANJL3xmgjgk",
    "title": "Nai Jaana",
