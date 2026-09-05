@@ -1,32 +1,8 @@
 {
- "updated": "2026-09-04T23:05:14.586230+00:00",
+ "updated": "2026-09-05T01:03:37.864051+00:00",
  "window_days": 7,
  "note": "Counts are built by diffing the full get_history() feed on each run, so tracks played between polls are captured. The feed lists each appearance once, so counts are a floor.",
  "plays": [
-  {
-   "videoId": "H-wn8HTNMTs",
-   "title": "Tell Me It's Okay",
-   "artist": "Fells",
-   "album": "Tell Me It's Okay",
-   "thumbnail": "https://yt3.googleusercontent.com/7j0lsm9ZN5r86XkLiiNmoSwasLxPDsNz7iyZcxSYUPEeh9AjCNcRbQFKX_vwIa4jDHe7a1sY1d7JzvCO=w120-h120-l90-rj",
-   "seen": "2026-08-29T00:07:00.140797+00:00"
-  },
-  {
-   "videoId": "mXDsuuVs4nM",
-   "title": "Yaanam",
-   "artist": "Sangeeth Vijayan",
-   "album": "Yaanam",
-   "thumbnail": "https://yt3.googleusercontent.com/_AfYW9IOFCJTe7LdoS_y1JQViwHTmm0CNMtJ002lQUatQdKTm1oGB9sFlW3ZIaKEqrFnZ15Bgju6ebqM=w120-h120-l90-rj",
-   "seen": "2026-08-29T00:07:00.140797+00:00"
-  },
-  {
-   "videoId": "g6K5f77G3A4",
-   "title": "Falsafa",
-   "artist": "Tanzeel Khan",
-   "album": "Falsafa",
-   "thumbnail": "https://yt3.googleusercontent.com/OXRP09XBdQJTrCl63il6KlSSgg8aKDV_FDPv2fV5sJeAOTpG2oX_Df9Uqfk_MBF5USgO5HmlfgJ97hs=w120-h120-l90-rj",
-   "seen": "2026-08-29T00:07:00.140797+00:00"
-  },
   {
    "videoId": "DwZnNbx5Xtc",
    "title": "I.O.Y.A (Ayyo Vayye)",
@@ -754,6 +730,14 @@
    "album": "Anbenum (From \"Leo\")",
    "thumbnail": "https://yt3.googleusercontent.com/KMB61Pb_MD2IHixsOetopTlz8tBny_YefgpoDJkMz8a3xfDaoDMoHR7tcuXjUHz832LHbP_om71ugyWM=w120-h120-l90-rj",
    "seen": "2026-09-04T15:53:05.196798+00:00"
+  },
+  {
+   "videoId": "BDS87tD4jv4",
+   "title": "Kashish",
+   "artist": "Ashish Bhatia, Omkar Singh, Kashish Ratnani",
+   "album": "Kashish",
+   "thumbnail": "https://yt3.googleusercontent.com/0w0hyueqFjw1kbAXjfBSIi47TJPDwwMoGzapHSP9f6zpJodeGyylNTcOgcYXOp6cWkxpqNOjZyeGg5Fr=w120-h120-l90-rj",
+   "seen": "2026-09-05T01:03:37.864051+00:00"
   }
  ]
 }
