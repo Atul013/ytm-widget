@@ -1,104 +1,8 @@
 {
- "updated": "2026-09-05T10:04:19.540669+00:00",
+ "updated": "2026-09-05T13:28:10.159275+00:00",
  "window_days": 7,
  "note": "Counts are built by diffing the full get_history() feed on each run, so tracks played between polls are captured. The feed lists each appearance once, so counts are a floor.",
  "plays": [
-  {
-   "videoId": "SayyURuKzmA",
-   "title": "Ulsava Rave",
-   "artist": "ThirumaLi, Fejo, ThudWiser",
-   "album": "Ulsava Rave",
-   "thumbnail": "https://yt3.googleusercontent.com/tuBv9L_2yhnySfB4ON1qBBah2VTV1T7vsxj9aWc0eWAKYROiSmAC-k5cf7lIlxIUmGAuBIEvg848l5dfqQ=w120-h120-l90-rj",
-   "seen": "2026-08-29T13:12:04.913153+00:00"
-  },
-  {
-   "videoId": "3kfHArnP1v4",
-   "title": "Meesaya Murukku",
-   "artist": "Hiphop Tamizha, Kharesma Ravichandran",
-   "album": "Meesaya Murukku (Original Motion Picture Soundtrack)",
-   "thumbnail": "https://yt3.googleusercontent.com/DZCWdWtJOwfVVhY5SyL0fLJd7MiASVewYGhVgCt6fMNtALojd95uCuViJt3WP_NoWdLwtEGEOUaxTVPo=w120-h120-l90-rj",
-   "seen": "2026-08-29T13:12:04.913153+00:00"
-  },
-  {
-   "videoId": "BP_lDdvPZ-U",
-   "title": "Ennilerinju",
-   "artist": "Rzee, Sithara Krishnakumar",
-   "album": "Jacobinte Swargarajyam",
-   "thumbnail": "https://yt3.googleusercontent.com/T3gtw0KVCDisX9SYFMUMyaYmZQQR6ClhSF6tru7L-YuQIP0BibqE5tl9yQ2Lh5DppZLyWReIrxtmKnW9=w120-h120-l90-rj",
-   "seen": "2026-08-29T13:12:04.913153+00:00"
-  },
-  {
-   "videoId": "0W8a3gLyuKo",
-   "title": "Ugraroopini",
-   "artist": "Bibin Ashok, Vaikom Vijayalakshmi, Hareesh Mohanan",
-   "album": "Prakambanam (Original Motion Picture Soundtrack)",
-   "thumbnail": "https://yt3.googleusercontent.com/GznlH8BtHlquAUp5E7O8pJ-JNfx_wX6YE5Ri3nznHnuUsDwWwENMGtSjd47xlm5aDdQYdQYoSK5fHSqG=w120-h120-l90-rj",
-   "seen": "2026-08-29T13:12:04.913153+00:00"
-  },
-  {
-   "videoId": "WIbmUGWykTw",
-   "title": "Karuppa Kooda Va (From \"Karuppu\")",
-   "artist": "Sai Abhyankkar, V.M. Mahalingam, Pa. Vijay",
-   "album": "Karuppa Kooda Va (From \"Karuppu\")",
-   "thumbnail": "https://yt3.googleusercontent.com/9ejQki8p5r46B0jGiMa7talsLlmp-W0oAM6Vu8CoSQjcCxcj39RceRHfS-E86H-czomzbv429pxHrCxB=w120-h120-l90-rj",
-   "seen": "2026-08-29T13:12:04.913153+00:00"
-  },
-  {
-   "videoId": "lPXl1__XtFI",
-   "title": "Verappa (From \"Karuppu\")",
-   "artist": "Sai Abhyankkar, Arivu, Arun Srinivasan",
-   "album": "Verappa (From \"Karuppu\")",
-   "thumbnail": "https://yt3.googleusercontent.com/HhyRXLaau8hSDYnhSQBEtt_1aodQ4k7-nKZ-9yoOHpAxzXXeUGxjG0UWGAteJXAbejwezw8y7cKY2Dg=w120-h120-l90-rj",
-   "seen": "2026-08-29T13:12:04.913153+00:00"
-  },
-  {
-   "videoId": "qemjcgBJMCE",
-   "title": "God Mode (From \"Karuppu\")",
-   "artist": "Sai Abhyankkar, Gana Muthu, Vishnu Edavan",
-   "album": "God Mode (From \"Karuppu\")",
-   "thumbnail": "https://yt3.googleusercontent.com/LKAPdNFKZLbBZv9FqxiHammc1jDUa12AWhJOX_9vJd8wh6QmeWQz7CgKlwe9tXYiXZe0_KZH9J9Vcqdf=w120-h120-l90-rj",
-   "seen": "2026-08-29T13:12:04.913153+00:00"
-  },
-  {
-   "videoId": "eIeIkZ5Li88",
-   "title": "God Mode Begins",
-   "artist": "Sai Abhyankkar, Gana Muthu, Vishnu Edavan",
-   "album": "Karuppu (Original Motion Picture Soundtrack)",
-   "thumbnail": "https://yt3.googleusercontent.com/Rfn-_qN5DiTfj3CBcrGsMXXaMkG_7szLem600l0fLsNHOR58ZfR_LEpDPYRDs7ePUnMtDWmVydYIhjE=w120-h120-l90-rj",
-   "seen": "2026-08-29T13:12:04.913153+00:00"
-  },
-  {
-   "videoId": "Y943FiZ-Uqw",
-   "title": "Chammak Challo",
-   "artist": "Vishal-Shekhar, Akon, Hamsika Iyer",
-   "album": "Ra-One",
-   "thumbnail": "https://yt3.googleusercontent.com/ODhreTQufJgEezdnPVmP8OF5nefXi4Q9y5dm2CjpjFGks0f5SXKe5sYsd1oiRnB_1Bz1Ghj7Sat2guwp=w120-h120-l90-rj",
-   "seen": "2026-08-29T13:12:04.913153+00:00"
-  },
-  {
-   "videoId": "7dkvKhGlguM",
-   "title": "Pulkodiyil Thoomani (From \"Take Off\")",
-   "artist": "Shaan Rahman, Hesham Abdul Wahab",
-   "album": "Pulkodiyil Thoomani (From \"Take Off\")",
-   "thumbnail": "https://yt3.googleusercontent.com/6qKGt0ZhKHGkQbMyjRck9x2QUCBV7p4iGWb4Gk4w6hdvGuckbOlmtw0rVDcRkjNn_jGUwI_WHVi9po4=w120-h120-l90-rj",
-   "seen": "2026-08-29T13:12:04.913153+00:00"
-  },
-  {
-   "videoId": "AnlSgkx1YQY",
-   "title": "Karukara (feat. Elsa Sam)",
-   "artist": "Maara Maari",
-   "album": "Karukara",
-   "thumbnail": "https://yt3.googleusercontent.com/0BNQQeDXkoHIWGegN1xQA9cu0R7Gh5xEjLCNuCuIcKJOyE-SaJ8_CCojvUgtFkgZO3yT24iM-d9N0lf7=w120-h120-l90-rj",
-   "seen": "2026-08-29T13:12:04.913153+00:00"
-  },
-  {
-   "videoId": "3Qw3M7ibgaM",
-   "title": "Ranam Title Track",
-   "artist": "Jakes Bejoy, Ajaey Shravan, Neha S Nair, and Saint TFC",
-   "album": "Ranam",
-   "thumbnail": "https://yt3.googleusercontent.com/gsf_5CNag1JnEXO6Vn5_zin69eilb5XRJH7J-QlmSAIav0B-IN7f0AY37fGEIsPxiHSIQVR6bLQwvEDWVQ=w120-h120-l90-rj",
-   "seen": "2026-08-29T13:12:04.913153+00:00"
-  },
   {
    "videoId": "D06jBxF4btE",
    "title": "Aaranne Aaranne",
@@ -618,6 +522,86 @@
    "album": "Popular Covers & Remixes",
    "thumbnail": "https://yt3.googleusercontent.com/ACgPzPqi-FuCXcqQQwF2YPOmEDWbIBH9LYXZMN1BLs-ugsz7srKDtcpcGTDpTrWHsgui0S9vjbGTdpXzcw=w120-h120-l90-rj",
    "seen": "2026-09-05T05:50:31.040608+00:00"
+  },
+  {
+   "videoId": "YBSBk4rSSa4",
+   "title": "Visiri (From \"Enai Noki Paayum Thota\")",
+   "artist": "Darbuka Siva, Thamarai, Sid Sriram, Shashaa Tirupati",
+   "album": "Enai Noki Paayum Thota (Original Motion Picture Soundtrack)",
+   "thumbnail": "https://yt3.googleusercontent.com/d_-TeFhEMZqGiep_-Lg7w1OwMFeou7WO25zUEUTbnB68Lry0wxfM63FcVEdJ1UKDiE_ImJR_6DStA2Jjyg=w120-h120-l90-rj",
+   "seen": "2026-09-05T13:28:10.159275+00:00"
+  },
+  {
+   "videoId": "N2AE4EEzGSk",
+   "title": "Wishlist (feat. Kaprila)",
+   "artist": "Dino James",
+   "album": "Wishlist",
+   "thumbnail": "https://yt3.googleusercontent.com/5mMfE2u5rvytKSdjDNavgr55qKyuECzSFMOkZr0ZebMDhxNDGegBLWCZktDurTzCsvXLeLtVaZxJRApv=w120-h120-l90-rj",
+   "seen": "2026-09-05T13:28:10.159275+00:00"
+  },
+  {
+   "videoId": "1H3yrMGU-UY",
+   "title": "Leon James - Vaaya Yen Veera ft. Shakthisree Gopalan",
+   "artist": "Leon James, 7.9M views",
+   "album": null,
+   "thumbnail": "https://i.ytimg.com/vi/1H3yrMGU-UY/hqdefault.jpg?sqp=-oaymwEWCJADEOEBIAQqCggAEOADGC0guwJIWg&rs=AMzJL3l6j6IzCBBweTR0Dg2YGOSbgYYzaA",
+   "seen": "2026-09-05T13:28:10.159275+00:00"
+  },
+  {
+   "videoId": "mijrHK95IwM",
+   "title": "Kadhal Yennulle",
+   "artist": "Ranjith Govind",
+   "album": "Neram",
+   "thumbnail": "https://yt3.googleusercontent.com/wf-Jna8MtCRMoo8C380y4XL6XOmUtHlceSZzhY1gTK1Wuc2_LIClQjerYmpMNT9R0gU0diyldjbLzMdPYQ=w120-h120-s-l90-rj",
+   "seen": "2026-09-05T13:28:10.159275+00:00"
+  },
+  {
+   "videoId": "RHEpKbqzxmA",
+   "title": "Manzar Hai Yeh Naya",
+   "artist": "Shashwat Sachdev, Shantanu Sudame",
+   "album": "Uri - The Surgical Strike (Original Motion Picture Soundtrack)",
+   "thumbnail": "https://yt3.googleusercontent.com/HKQ_ktfE8KtIQiGnGHDr474nZHLHJLQv5_Rfizjs63_fwVLpHZtAmUx3MTNCWgFe_dI746KUYdiQtIosLg=w120-h120-l90-rj",
+   "seen": "2026-09-05T13:28:10.159275+00:00"
+  },
+  {
+   "videoId": "zRKvLzLVIKQ",
+   "title": "Tera Zikr",
+   "artist": "Darshan Raval",
+   "album": "Tera Zikr",
+   "thumbnail": "https://yt3.googleusercontent.com/bIAf42UjuKGd7WK3TpdQVJAchrbrlOMj79PGjC592zb9IYFjuicBx-kO-PF3kbY2Lcny7lYQAZWeIpY=w120-h120-l90-rj",
+   "seen": "2026-09-05T13:28:10.159275+00:00"
+  },
+  {
+   "videoId": "YE8S25WAII8",
+   "title": "Kina Chir",
+   "artist": "The PropheC",
+   "album": "The Lifestyle",
+   "thumbnail": "https://yt3.googleusercontent.com/uW-WgJ7ttNZmNyGOAee0XIppx0hExUhOpQjh3tX6hp5-F-tNbgDqs-fpspDoWSq3d91uNm9x3Wo2EnYP=w120-h120-l90-rj",
+   "seen": "2026-09-05T13:28:10.159275+00:00"
+  },
+  {
+   "videoId": "f0t2xiESG5k",
+   "title": "Chandrachooda",
+   "artist": "Anirudh Subramanian",
+   "album": "Chandrachooda",
+   "thumbnail": "https://yt3.googleusercontent.com/-WHXQFS7aN6D-pmjzEozi0xBWXIewHeOgxDp3hFSABhKb9awXVN322iKA13tbd3qMSypqG5IhpvPt-A=w120-h120-l90-rj",
+   "seen": "2026-09-05T13:28:10.159275+00:00"
+  },
+  {
+   "videoId": "zd4-611yH8Q",
+   "title": "Thullum Nenjam",
+   "artist": "Amrit Ramnath, Shreya Ghoshal, & Karthik Netha",
+   "album": "3BHK (Original Motion Picture Soundtrack)",
+   "thumbnail": "https://yt3.googleusercontent.com/af4gT6wOe7NN4WzqPLmgwI_1lHDAe6b54qbPcHXkMu0kEH2RsLcz5GxeN4fqPoT8p_sQPY688LvuX4c=w120-h120-l90-rj",
+   "seen": "2026-09-05T13:28:10.159275+00:00"
+  },
+  {
+   "videoId": "EpWzjiLS2Rg",
+   "title": "Karma (The Cycle Turns)",
+   "artist": "Sumedh K",
+   "album": "Yuga",
+   "thumbnail": "https://yt3.googleusercontent.com/ayJXtlUCqoA7sU2NveWBZDtk90TWHALHTzU5YFA_nLxN6IFEhxi5KTTp3D21Y_8RZ3XDjjVtWwlPZPY=w120-h120-l90-rj",
+   "seen": "2026-09-05T13:28:10.159275+00:00"
   }
  ]
 }
