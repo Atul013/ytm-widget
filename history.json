@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-05T01:03:37.864051+00:00",
+ "updated": "2026-09-05T05:50:31.040608+00:00",
  "window_days": 7,
  "note": "Counts are built by diffing the full get_history() feed on each run, so tracks played between polls are captured. The feed lists each appearance once, so counts are a floor.",
  "plays": [
@@ -738,6 +738,30 @@
    "album": "Kashish",
    "thumbnail": "https://yt3.googleusercontent.com/0w0hyueqFjw1kbAXjfBSIi47TJPDwwMoGzapHSP9f6zpJodeGyylNTcOgcYXOp6cWkxpqNOjZyeGg5Fr=w120-h120-l90-rj",
    "seen": "2026-09-05T01:03:37.864051+00:00"
+  },
+  {
+   "videoId": "hQgdJV1aPHA",
+   "title": "Araj",
+   "artist": "Ronkini Gupta, Arshad Ali Khan, Akashdeep Sengupta, and Ankkit Singh",
+   "album": "Bandish Bandits Season 2",
+   "thumbnail": "https://yt3.googleusercontent.com/UU29wlz7a3bT-6-ntCmCoorHd0V2RDKdlSlONTY_Rr2KmTDJhuXVJlcrCTXsEvcaHa7WUF_Oo2GzlwNXCg=w120-h120-l90-rj",
+   "seen": "2026-09-05T05:50:31.040608+00:00"
+  },
+  {
+   "videoId": "Jo42EKYGEXI",
+   "title": "Polika Polika (From \"Chaaver\")",
+   "artist": "Justin Varghese, Govind Vasantha, BABY JEAN, Santhosh Varma",
+   "album": "Polika Polika (From \"Chaaver\")",
+   "thumbnail": "https://yt3.googleusercontent.com/TIcE9WXccmk-MvwhfLuxuDZozgYO6Jw-njzZfm_KRCUyi8Qa2BFJTl7JcFrFt8DmLExSbZwGflnDNk1x=w120-h120-l90-rj",
+   "seen": "2026-09-05T05:50:31.040608+00:00"
+  },
+  {
+   "videoId": "ct0xxCKgMYY",
+   "title": "Puzhu Pulikal (Reprise)",
+   "artist": "Evugin",
+   "album": "Popular Covers & Remixes",
+   "thumbnail": "https://yt3.googleusercontent.com/ACgPzPqi-FuCXcqQQwF2YPOmEDWbIBH9LYXZMN1BLs-ugsz7srKDtcpcGTDpTrWHsgui0S9vjbGTdpXzcw=w120-h120-l90-rj",
+   "seen": "2026-09-05T05:50:31.040608+00:00"
   }
  ]
 }
