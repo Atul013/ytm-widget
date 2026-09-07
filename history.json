@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-07T00:43:51.829114+00:00",
+ "updated": "2026-09-07T05:44:53.756692+00:00",
  "window_days": 7,
  "note": "Counts are built by diffing the full get_history() feed on each run, so tracks played between polls are captured. The feed lists each appearance once, so counts are a floor.",
  "plays": [
@@ -538,6 +538,70 @@
    "album": null,
    "thumbnail": "https://i.ytimg.com/vi/qaFovhyjFEM/hqdefault.jpg?sqp=-oaymwEWCJADEOEBIAQqCggAEOADGC0guwJIWg&rs=AMzJL3mF2OA3uacYGDJL9rx0wxBv93ZYBw",
    "seen": "2026-09-06T13:06:08.117315+00:00"
+  },
+  {
+   "videoId": "E2RGyGeM2A4",
+   "title": "Warrior",
+   "artist": "lladywolf",
+   "album": "Warrior",
+   "thumbnail": "https://yt3.googleusercontent.com/wm6kmHPlM59J4x48fpESSsXUZChh9g32ws_dtIKwq-PfrsNUsM9jiVqRwXeYugyybX1FXHzs6likiXx0=w120-h120-l90-rj",
+   "seen": "2026-09-07T05:44:53.756692+00:00"
+  },
+  {
+   "videoId": "G0tmfgfTzgg",
+   "title": "I Don't Care",
+   "artist": "Ash Reed Music",
+   "album": "GraveSoul",
+   "thumbnail": "https://yt3.googleusercontent.com/0eM6ip9Z8P2II58FOlWR4WQ_spUAtEPBfYJhZoDOSQZ8bGUzEXMBGLkMHxwXkdOXcc6YffjxjqtQHJkp=w120-h120-l90-rj",
+   "seen": "2026-09-07T05:44:53.756692+00:00"
+  },
+  {
+   "videoId": "PEnmMz3EGVc",
+   "title": "I Will Rise Again",
+   "artist": "Orkestral Studio",
+   "album": "I Will Rise Again",
+   "thumbnail": "https://yt3.googleusercontent.com/VRptzYcI_c760ipSTxGtgr5T9CkzEZADIZrhNu8KQLo1T49LPlN1sxX28rC5CRy94E7AfVk7vrOh9X5L=w120-h120-l90-rj",
+   "seen": "2026-09-07T05:44:53.756692+00:00"
+  },
+  {
+   "videoId": "j14CajFMFpA",
+   "title": "Shree Ganeshay Dheemahi",
+   "artist": "Shankar Mahadevan, Chorus",
+   "album": "Vishwa Vinayaka",
+   "thumbnail": "https://yt3.googleusercontent.com/4Za8BTP-DoNAD_H8uskVFwKjdlQTKtmVr4gT1-igyuBFlb0YTgKcZ3G7WxhKKZfkehnu-gPi8j6L0ZaE=w120-h120-l90-rj",
+   "seen": "2026-09-07T05:44:53.756692+00:00"
+  },
+  {
+   "videoId": "PcFTH3tcJ7Y",
+   "title": "Sober",
+   "artist": "Bad Wolves",
+   "album": "N.A.T.I.O.N.",
+   "thumbnail": "https://yt3.googleusercontent.com/h5jHBqg7OKtPP2lSXrNEQk-ojV8boK-lEPBsiWLOrdSlqKdMNHI5DCQ8mBEqk1VD5URNTyTLE8TbAD-D=w120-h120-l90-rj",
+   "seen": "2026-09-07T05:44:53.756692+00:00"
+  },
+  {
+   "videoId": "qyT8DCt3Hhg",
+   "title": "BONEWIRE RADIO",
+   "artist": "Deadfolk Prophet",
+   "album": "BONEWIRE RADIO",
+   "thumbnail": "https://yt3.googleusercontent.com/eT2ZwXvF2nUAOWYFoATJdon9tSW35TyIfSvalZJeGJKWcoZAPp8rs5JqykSZ1Y-TAW7zynNT-HcHZmw=w120-h120-l90-rj",
+   "seen": "2026-09-07T05:44:53.756692+00:00"
+  },
+  {
+   "videoId": "YTOtxWFGFJ0",
+   "title": "SRI RAMADOOTHA STOTRAM",
+   "artist": "Sai Charan Bhaskaruni, Lokeshwar Edara, & Harshavardhan Chavali",
+   "album": "HANUMAN",
+   "thumbnail": "https://yt3.googleusercontent.com/bIdoFTRODg0T2BtE79MnlHquWGYgVE8lGrru9mS7ZrbrO05iyEyUtsonaHFrFk6EYHevXHlPY3FomfY=w120-h120-l90-rj",
+   "seen": "2026-09-07T05:44:53.756692+00:00"
+  },
+  {
+   "videoId": "jJjBT5lLYGY",
+   "title": "Thaniye",
+   "artist": "Sooraj Santhosh",
+   "album": "Guppy (Original Motion Picture Soundtrack)",
+   "thumbnail": "https://yt3.googleusercontent.com/7DmALjV3iIDsbTtjTv8IEuSokkQdPwvmDIIYP_JoAsC-64ioHRDvFELqYPVO7XdKI9VDfU5XnilYRj3JVQ=w120-h120-l90-rj",
+   "seen": "2026-09-07T05:44:53.756692+00:00"
   }
  ]
 }
