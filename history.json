@@ -1,16 +1,8 @@
 {
- "updated": "2026-09-08T15:17:58.577081+00:00",
+ "updated": "2026-09-08T18:48:22.320204+00:00",
  "window_days": 7,
  "note": "Counts are built by diffing the full get_history() feed on each run, so tracks played between polls are captured. The feed lists each appearance once, so counts are a floor.",
  "plays": [
-  {
-   "videoId": "rowLbZTTpvI",
-   "title": "UNSECRET X NILKA - LAST SURVIVIOR [OFFICIAL AUDIO]",
-   "artist": "UNSECRET, 446K views",
-   "album": null,
-   "thumbnail": "https://i.ytimg.com/vi/rowLbZTTpvI/hqdefault.jpg?sqp=-oaymwEWCJADEOEBIAQqCggAEOADGC0guwJIWg&rs=AMzJL3kS0mFeQOXnxrtwb28av-c6DIfU3w",
-   "seen": "2026-09-01T17:51:41.135635+00:00"
-  },
   {
    "videoId": "__OAjRBXnU0",
    "title": "Eyes of a Champion",
@@ -522,6 +514,22 @@
    "album": "Suniyan Suniyan",
    "thumbnail": "https://yt3.googleusercontent.com/1Rik9Jho_LZKBUiUnxR3h8oLhdquioSjV397tkNe66_PK7zbehd1Hy7ZAX25OebqXuTjj4bl0kFGBc_M=w120-h120-l90-rj",
    "seen": "2026-09-08T06:01:16.831826+00:00"
+  },
+  {
+   "videoId": "Ha4fSclVanI",
+   "title": "Jhol",
+   "artist": "Maanu, Annural Khalid",
+   "album": "Jhol",
+   "thumbnail": "https://yt3.googleusercontent.com/GP9v2CnfMkE8wF3zy1An4FECREeFYy-6Y4iS2OwvISYnOTF09e6sSfD5XYuUjgaiczGvliqbycu3Yp27=w120-h120-l90-rj",
+   "seen": "2026-09-08T18:48:22.320204+00:00"
+  },
+  {
+   "videoId": "3Qw3M7ibgaM",
+   "title": "Ranam Title Track",
+   "artist": "Jakes Bejoy, Ajaey Shravan, Neha S Nair, and Saint TFC",
+   "album": "Ranam",
+   "thumbnail": "https://yt3.googleusercontent.com/gsf_5CNag1JnEXO6Vn5_zin69eilb5XRJH7J-QlmSAIav0B-IN7f0AY37fGEIsPxiHSIQVR6bLQwvEDWVQ=w120-h120-l90-rj",
+   "seen": "2026-09-08T18:48:22.320204+00:00"
   }
  ]
 }
